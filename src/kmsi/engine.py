@@ -126,9 +126,49 @@ def sub_indicators(cal: pd.DatetimeIndex, cfg: dict) -> pd.DataFrame:
     out["cftc_es_net_pct_oi"] = align("cftc_es_net_pct_oi", cal, max_carry_days=cfg["coverage"]["weekly_carry_calendar_days"])
 
     sox = a("px_idx_sox")
-    out["ai_rel_ret63"] = (sox / sox.shift(R) - 1) - out["spx_ret63"]
-    out["ai_share_above_sma200"] = np.nan   # filled once the AI basket is fixed (Phase 5)
+    analogue = (sox / sox.shift(R) - 1) - out["spx_ret63"]
+    rel, share = ai_basket(cal, cfg, out["spx_ret63"], a)
+    use = rel.notna()
+    out["ai_rel_ret63"] = analogue.where(~use, rel)
+    out["ai_share_above_sma200"] = share
+    out["ai_source"] = np.where(use, "basket", "sox_analogue")
     return out
+
+
+def ai_basket(cal, cfg, spx_ret63, a):
+    """Equal-weighted KBRI disclosure basket: 63-day return vs S&P 500 and share above 200-day SMA.
+    Membership on day t = members at the latest month-end strictly before t. NaN while < min_members."""
+    spec = cfg["parameters"].get("ai_basket")
+    nan = pd.Series(np.nan, index=cal)
+    upath = ROOT / "data" / "staged" / "kbri_universe_monthly.parquet"
+    if not spec or not upath.exists():
+        return nan, nan
+    U = pd.read_parquet(upath)
+    U = U[U["member"]]
+    months = sorted(U["date"].unique())
+    mem = {m: sorted(U.loc[U["date"] == m, "ticker"]) for m in months}
+    tickers = sorted(U["ticker"].unique())
+    L, R = cfg["parameters"]["sma_long"], cfg["parameters"]["ret_window"]
+    px = pd.DataFrame({t: a(f"px_{t.lower()}") for t in tickers})
+    ret = px.pct_change(fill_method=None)
+    above = (px > px.rolling(L, min_periods=L).mean()).where(px.rolling(L, min_periods=L).mean().notna())
+    mi = np.searchsorted(np.array(months, dtype="datetime64[ns]"), cal.values.astype("datetime64[ns]"), side="left") - 1
+    ew = pd.Series(np.nan, index=cal)
+    sh = pd.Series(np.nan, index=cal)
+    n_mem = pd.Series(0, index=cal)
+    for i, t in enumerate(cal):
+        if mi[i] < 0:
+            continue
+        ms = mem[months[mi[i]]]
+        n_mem.iloc[i] = len(ms)
+        if len(ms) < spec["min_members"]:
+            continue
+        ew.iloc[i] = ret.loc[t, ms].mean()
+        sh.iloc[i] = above.loc[t, ms].mean()
+    active = n_mem >= spec["min_members"]
+    cum = np.exp(np.log1p(ew).rolling(R, min_periods=R).sum()) - 1
+    rel = (cum - spx_ret63).where(active)
+    return rel, sh.where(active)
 
 
 # ------------------------------------------------------------------ step 3
@@ -203,6 +243,7 @@ def run(cutoff: str | None = None, cfg: dict | None = None, write: bool = True) 
     cfg = cfg or base_cfg
     cal = calendar(cutoff)
     raw = sub_indicators(cal, cfg)
+    ai_src = raw.pop("ai_source")
     sub = score(raw, cfg)
     comps, kmsi, wsum = aggregate(sub, cfg)
     sub_z = score(raw, cfg, "robust_z")
@@ -216,6 +257,7 @@ def run(cutoff: str | None = None, cfg: dict | None = None, write: bool = True) 
     res["regime"] = [regime(x, cfg) for x in kmsi]
     res["kmsi_robust_z"] = kmsi_z
     res["missing_components"] = comps.isna().apply(lambda r: ",".join(r.index[r]), axis=1)
+    res["ai_momentum_source"] = ai_src
     res["model_version"] = cfg["version"]
     res["config_sha"] = h
     out = {"raw": raw, "sub": sub, "components": comps, "result": res}
@@ -231,7 +273,7 @@ def run(cutoff: str | None = None, cfg: dict | None = None, write: bool = True) 
             "calculation_utc": pd.Timestamp.now(tz="UTC").isoformat(timespec="seconds"),
             "data_cutoff": str(last.date()) if last is not None else None,
             "first_published": str(res["kmsi"].first_valid_index().date()),
-            "universe": "AI momentum uses ^SOX analogue (provisional until Phase 5)",
+            "universe": "AI momentum: KBRI disclosure basket (EW) from its first month with >= 5 members; ^SOX analogue before",
             "transform": cfg["normalisation"],
             "weights": {k: v["weight"] for k, v in cfg["components"].items()},
             "source_manifest": "data/raw/manifest.json",

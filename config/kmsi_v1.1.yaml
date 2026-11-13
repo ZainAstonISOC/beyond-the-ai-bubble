@@ -63,5 +63,8 @@ parameters:
   synthetic_bond_duration: 8.0
   sectors: [XLB, XLE, XLF, XLI, XLK, XLP, XLU, XLV, XLY]
   haven_mix: {IEF: 0.5, "GC=F": 0.5}
+  # AI basket (as specified in plan v1.0): KBRI disclosure basket, equal-weighted, membership from the
+  # previous month-end; used once it has >= 5 members (first: Dec 2024, used from Jan 2025). ^SOX analogue before.
+  ai_basket: {source: kbri_disclosure, min_members: 5}
 
 regimes: [[0, 20, "Extreme fear"], [21, 40, "Fear"], [41, 60, "Neutral"], [61, 80, "Greed"], [81, 100, "Extreme greed"]]

@@ -95,6 +95,42 @@ def pct(x, W, mn):
     return o
 
 
+def basket_np(cal, A, spx_ret63, P, R, L):
+    spec = P.get("ai_basket")
+    n = len(cal)
+    if not spec:
+        return np.full(n, np.nan), np.full(n, np.nan)
+    U = pd.read_parquet(ROOT / "data" / "staged" / "kbri_universe_monthly.parquet")
+    U = U[U["member"]]
+    months = np.array(sorted(U["date"].unique()), dtype="datetime64[D]")
+    mem = {m: set(U.loc[U["date"].values.astype("datetime64[D]") == m, "ticker"]) for m in months}
+    tick = sorted(U["ticker"].unique())
+    px = {t: A(f"px_{t.lower()}") for t in tick}
+    rt = {t: pchg(px[t]) for t in tick}
+    ab = {}
+    for t in tick:
+        m = sma(px[t], L)
+        ab[t] = np.where(np.isnan(m) | np.isnan(px[t]), np.nan, (px[t] > m).astype(float))
+    ew = np.full(n, np.nan); sh = np.full(n, np.nan); active = np.zeros(n, bool)
+    j = -1
+    for i, d in enumerate(cal):
+        while j + 1 < len(months) and months[j + 1] < d:
+            j += 1
+        if j < 0:
+            continue
+        ms = sorted(mem[months[j]])
+        if len(ms) < spec["min_members"]:
+            continue
+        active[i] = True
+        r = np.array([rt[t][i] for t in ms]); a = np.array([ab[t][i] for t in ms])
+        ew[i] = np.nanmean(r) if np.isfinite(r).any() else np.nan
+        sh[i] = np.nanmean(a) if np.isfinite(a).any() else np.nan
+    rel = cumret(ew, R) - spx_ret63
+    rel[~active] = np.nan
+    sh[~active] = np.nan
+    return rel, sh
+
+
 def main():
     P = CFG["parameters"]
     L, R, V, age = P["sma_long"], P["ret_window"], P["rv_window"], CFG["coverage"]["stale_business_days"]
@@ -135,8 +171,10 @@ def main():
     hav = np.where(cal > ief_start, mix, synth)
     raw["equity_vs_haven_ret63"] = cumret(eq, R) - cumret(hav, R)
     raw["cftc_es_net_pct_oi"] = pit("cftc_es_net_pct_oi", cal, carry_days=CFG["coverage"]["weekly_carry_calendar_days"])
-    raw["ai_rel_ret63"] = ret(A("px_idx_sox"), R) - raw["spx_ret63"]
-    raw["ai_share_above_sma200"] = np.full(len(cal), np.nan)
+    analogue = ret(A("px_idx_sox"), R) - raw["spx_ret63"]
+    rel, share = basket_np(cal, A, raw["spx_ret63"], P, R, L)
+    raw["ai_rel_ret63"] = np.where(np.isnan(rel), analogue, rel)
+    raw["ai_share_above_sma200"] = share
 
     Wn, mn = CFG["normalisation"]["window_days"], CFG["normalisation"]["min_obs"]
     comps, weights = {}, {}

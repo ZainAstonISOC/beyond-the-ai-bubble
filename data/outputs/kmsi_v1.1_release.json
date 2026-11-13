@@ -1,10 +1,10 @@
 {
  "model_version": "1.1",
- "config_sha": "d588bf2753f9",
- "calculation_utc": "2026-11-13T01:28:11+00:00",
+ "config_sha": "f3187d25946f",
+ "calculation_utc": "2026-11-13T11:07:37+00:00",
  "data_cutoff": "2026-11-12",
  "first_published": "2001-10-10",
- "universe": "AI momentum uses ^SOX analogue (provisional until Phase 5)",
+ "universe": "AI momentum: KBRI disclosure basket (EW) from its first month with >= 5 members; ^SOX analogue before",
  "transform": {
   "method": "rolling_percentile",
   "window_days": 1260,
