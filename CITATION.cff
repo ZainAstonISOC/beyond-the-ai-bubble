@@ -7,7 +7,6 @@ authors:
     website: "https://howdenresearch.uk"
 version: "0.1.0-pre"
 license: MIT
-repository-code: "https://github.com/howden-research/beyond-the-ai-bubble"
 keywords:
   - artificial intelligence
   - asset price bubbles
