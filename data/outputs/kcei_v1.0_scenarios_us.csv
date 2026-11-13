@@ -1,0 +1,7 @@
+scenario,load_2028_TWh,incremental_TWh_vs_2023,cagr_2023_28,grid_intensity_basis,gCO2_per_kWh,incremental_location_based_MtCO2,status
+A: sustained build-out (LBNL high),580.0,404.0,0.26935490385575767,Ember 2024 average,384.0,155.136,forecast
+A: sustained build-out (LBNL high),580.0,404.0,0.26935490385575767,EIA 2023 average,367.0,148.268,forecast
+B: correction and consolidation (LBNL midpoint),452.5,276.5,0.207872748864963,Ember 2024 average,384.0,106.176,forecast
+B: correction and consolidation (LBNL midpoint),452.5,276.5,0.207872748864963,EIA 2023 average,367.0,101.4755,forecast
+C: overbuild and stranding (LBNL low),325.0,149.0,0.13050929808694378,Ember 2024 average,384.0,57.216,forecast
+C: overbuild and stranding (LBNL low),325.0,149.0,0.13050929808694378,EIA 2023 average,367.0,54.683,forecast

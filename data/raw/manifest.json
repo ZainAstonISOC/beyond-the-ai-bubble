@@ -113,6 +113,144 @@
   "retrieved_utc": "2026-11-13T07:55:36+00:00",
   "sha256": "bb4d8da0a371a00af06172ec41dcef35a9ae30d6ab9c03d58ab5d2187e1e406f"
  },
+ "damodaran/psdata00.xls": {
+  "bytes": 27136,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata00.xls",
+  "retrieved_utc": "2026-11-13T11:14:19+00:00",
+  "sha256": "4f8a94be37e185fc52180b4eaf37ec352d5d2cc689e3450b3a5b704eb6e84ecb"
+ },
+ "damodaran/psdata01.xls": {
+  "bytes": 28160,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata01.xls",
+  "retrieved_utc": "2026-11-13T11:14:19+00:00",
+  "sha256": "aec09a467e84b59586661abd9f1034bb0794f6cce2d2a030902c551e20e4524a"
+ },
+ "damodaran/psdata02.xls": {
+  "bytes": 27648,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata02.xls",
+  "retrieved_utc": "2026-11-13T11:14:20+00:00",
+  "sha256": "7e580a2903450f3055a5254d9cce323084826f51ecf44d8a673ae7055f2fdfae"
+ },
+ "damodaran/psdata03.xls": {
+  "bytes": 27648,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata03.xls",
+  "retrieved_utc": "2026-11-13T11:14:20+00:00",
+  "sha256": "55220f821f62c4655471ef9ed9708b72347dd64feade3a2f15245f5bf307d8e6"
+ },
+ "damodaran/psdata04.xls": {
+  "bytes": 27648,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata04.xls",
+  "retrieved_utc": "2026-11-13T11:14:20+00:00",
+  "sha256": "45cf93c09b88fcd7fc59a2e73dc10b473fcdda64966a720a9585d62ef8981940"
+ },
+ "damodaran/psdata05.xls": {
+  "bytes": 55808,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata05.xls",
+  "retrieved_utc": "2026-11-13T11:14:20+00:00",
+  "sha256": "c14929a8d3def6798a3be4e084dc5e4da1f74d71344fd906646d2d53634e5c01"
+ },
+ "damodaran/psdata06.xls": {
+  "bytes": 49152,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata06.xls",
+  "retrieved_utc": "2026-11-13T11:14:21+00:00",
+  "sha256": "86750f56eaa7b34114fb97213f5241b4323635a94a66f28b8914659d368799cd"
+ },
+ "damodaran/psdata07.xls": {
+  "bytes": 48640,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata07.xls",
+  "retrieved_utc": "2026-11-13T11:14:21+00:00",
+  "sha256": "6c04c0c6dbb8f28d0b7b84fff8e3dadf89c9efc2f4d71e923b708fefdddb440f"
+ },
+ "damodaran/psdata08.xls": {
+  "bytes": 48640,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata08.xls",
+  "retrieved_utc": "2026-11-13T11:14:21+00:00",
+  "sha256": "807d7b6ad2e822a05b438ec8038e0f6c8a7481142a80f6d7f0c5e56159807a7a"
+ },
+ "damodaran/psdata09.xls": {
+  "bytes": 49152,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata09.xls",
+  "retrieved_utc": "2026-11-13T11:14:21+00:00",
+  "sha256": "766432fe3ca4492c6736f68f9675adb8f5a52a5ab45f959439903b076d114b7b"
+ },
+ "damodaran/psdata10.xls": {
+  "bytes": 48640,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata10.xls",
+  "retrieved_utc": "2026-11-13T11:14:22+00:00",
+  "sha256": "acab4dfccd2009a3d3b24acbba624a0d049fadc7c2f02020f20d666808ede017"
+ },
+ "damodaran/psdata11.xls": {
+  "bytes": 49152,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata11.xls",
+  "retrieved_utc": "2026-11-13T11:14:22+00:00",
+  "sha256": "b4f3637e9eb6ebfc919587e9f5381ed2fae613bb67196d60574c722207377168"
+ },
+ "damodaran/psdata12.xls": {
+  "bytes": 55296,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata12.xls",
+  "retrieved_utc": "2026-11-13T11:14:22+00:00",
+  "sha256": "7f6d573ed1ac06c257e34d41033a5480331846cc6ac6bf78ced4e9ff417df5c5"
+ },
+ "damodaran/psdata13.xls": {
+  "bytes": 50176,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata13.xls",
+  "retrieved_utc": "2026-11-13T11:14:23+00:00",
+  "sha256": "40d7935d0eb198272fe1cbc9054e22f82746d8dc8aaf51074ac903bd1d82881e"
+ },
+ "damodaran/psdata14.xls": {
+  "bytes": 55296,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata14.xls",
+  "retrieved_utc": "2026-11-13T11:14:23+00:00",
+  "sha256": "de539ad2822012dcc1ab06a1fa437139de1448172ace8e6b5d5c2674e192832f"
+ },
+ "damodaran/psdata15.xls": {
+  "bytes": 84480,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata15.xls",
+  "retrieved_utc": "2026-11-13T11:14:23+00:00",
+  "sha256": "fdf7b1bb97f00bfbf5e2cc16ba6a8dbc4c8542767ff74476b9cb3ade85bce5af"
+ },
+ "damodaran/psdata16.xls": {
+  "bytes": 85504,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata16.xls",
+  "retrieved_utc": "2026-11-13T11:14:23+00:00",
+  "sha256": "979e9308381570c6d0fa9387bd8c274cd85b1177d0cfdf114050ac677f23efdf"
+ },
+ "damodaran/psdata17.xls": {
+  "bytes": 86528,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata17.xls",
+  "retrieved_utc": "2026-11-13T11:14:24+00:00",
+  "sha256": "7bfd646bcf5a1cbb26d7aea68ac4c82d64cced0407d44dadde825bd70fa5cdee"
+ },
+ "damodaran/psdata18.xls": {
+  "bytes": 84992,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata18.xls",
+  "retrieved_utc": "2026-11-13T11:14:24+00:00",
+  "sha256": "c520c8a5a0c21aac0d81c25ff1fedd2e23c5c1545bf6aa215d81af7ec9989375"
+ },
+ "damodaran/psdata19.xls": {
+  "bytes": 41472,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata19.xls",
+  "retrieved_utc": "2026-11-13T11:14:24+00:00",
+  "sha256": "e90f1348f2d4985e854797a615ca01c4c10d9fccc94a7561b381cd11cc00f1c6"
+ },
+ "damodaran/psdata20.xls": {
+  "bytes": 49664,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata20.xls",
+  "retrieved_utc": "2026-11-13T11:14:25+00:00",
+  "sha256": "8bc5d469621d68a2d710040f9174d0498a599098506b63ca83878f0778c3a1a2"
+ },
+ "damodaran/psdata99.xls": {
+  "bytes": 26624,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/archives/psdata99.xls",
+  "retrieved_utc": "2026-11-13T11:14:19+00:00",
+  "sha256": "2ce120316deb12d0ae557687eda16abc660814ac56600b960cb1726683b784b3"
+ },
+ "damodaran/psdata_current.xls": {
+  "bytes": 52736,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/datasets/psdata.xls",
+  "retrieved_utc": "2026-11-13T11:14:25+00:00",
+  "sha256": "32b37302ccb78c6154f6bb991759dedbda838c1dca4a32fc87878d121e28c42b"
+ },
  "edgar/company_tickers.json": {
   "bytes": 796325,
   "origin": "https://www.sec.gov/files/company_tickers.json",
@@ -12520,6 +12658,12 @@
   "origin": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=T10Y2Y",
   "retrieved_utc": "2026-11-13T01:20:38+00:00",
   "sha256": "ee6c242ae5d1fb59db209d93a6a3977c5fb3bfd1eb7e113869abe008500616b6"
+ },
+ "shiller/ie_data.xls": {
+  "bytes": 1628672,
+  "origin": "http://www.econ.yale.edu/~shiller/data/ie_data.xls",
+  "retrieved_utc": "2026-11-13T11:14:18+00:00",
+  "sha256": "0df9392b7dacf91f756e92c8db508ad903c4588b43f3253680eec3dd8b40db68"
  },
  "yahoo/AAOI.json": {
   "bytes": 352404,

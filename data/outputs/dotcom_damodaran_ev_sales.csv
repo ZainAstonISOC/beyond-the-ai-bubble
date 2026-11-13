@@ -1,0 +1,133 @@
+vintage_year,industry,ev_sales,matched,vs_jan2000
+1999,semiconductors,4.94521623597431,Semiconductor,1.1120916390182098
+1999,software,6.53911645514631,Computer Software & Svcs,1.180728803789357
+1999,telecom equipment,4.6046528149945765,Telecom. Equipment,1.0832443496196469
+1999,internet and information services,44.61288317824459,Internet,7.058981193391948
+2000,semiconductors,4.44677044810813,Semiconductor,1.0
+2000,software,5.538203552043517,Computer Software & Svcs,1.0
+2000,telecom equipment,4.250797907795578,Telecom. Equipment,1.0
+2000,internet and information services,6.320017288048251,Internet,1.0
+2001,semiconductors,3.0689192861742,Semiconductor; Semiconductor Cap Eq,0.6901456510937878
+2001,software,3.77535851406155,Computer Software & Svcs,0.6816937078212839
+2001,telecom equipment,1.52749429396568,Telecom. Equipment,0.3593429579807579
+2001,internet and information services,3.49830085871771,Information Services; Internet,0.553527102739628
+2002,semiconductors,2.5817805342784,Semiconductor,0.5805967644173793
+2002,semiconductor equipment,2.272648917831833,Semiconductor Equip,
+2002,software,2.726743528925224,Computer Software/Svcs,0.49235162689516804
+2002,computers and peripherals,1.539017636252316,Computers/Peripherals,
+2002,telecom equipment,1.1110092569735002,Telecom. Equipment,0.26136487338906655
+2002,internet and information services,3.0427059691986926,Information Services; Internet,0.4814395009571788
+2003,semiconductors,4.371563095740734,Semiconductor,0.9830871970467031
+2003,semiconductor equipment,4.884327271550608,Semiconductor Equip,
+2003,software,3.7251702920980123,Computer Software/Svcs,0.6726315233977773
+2003,computers and peripherals,1.4593507467820719,Computers/Peripherals,
+2003,telecom equipment,4.498130072419532,Telecom. Equipment,1.058184879636449
+2003,internet and information services,4.7149013579440755,Information Services; Internet,0.7460266551581115
+2004,semiconductors,3.2306642462779473,Semiconductor,0.7265192309741167
+2004,semiconductor equipment,3.713282459175143,Semiconductor Equip,
+2004,software,3.4347323086979746,Computer Software/Svcs,0.6201888891264403
+2004,computers and peripherals,1.5121578144373238,Computers/Peripherals,
+2004,telecom equipment,4.336201962983477,Telecom. Equipment,1.0200912998078022
+2004,internet and information services,6.066862175083026,Information Services; Internet,0.9599439208111084
+2005,semiconductors,3.0465174389508625,Semiconductor,0.6851078719943813
+2005,semiconductor equipment,2.4881209005291134,Semiconductor Equip,
+2005,software,3.34143588129555,Computer Software/Svcs,0.6033429161451836
+2005,computers and peripherals,1.2810007232762897,Computers/Peripherals,
+2005,telecom equipment,3.593916551218318,Telecom. Equipment,0.8454686929781822
+2005,internet and information services,5.931859113428455,Information Services; Internet,0.9385827353108923
+2006,semiconductors,2.981660603839358,Semiconductor,0.6705227172470528
+2006,semiconductor equipment,2.8575360490593145,Semiconductor Equip,
+2006,software,3.447399131200668,Computer Software/Svcs,0.6224760608390112
+2006,computers and peripherals,1.3220738795018743,Computers/Peripherals,
+2006,telecom equipment,2.4875946565268814,Telecom. Equipment,0.5852065213368197
+2006,internet and information services,4.67066699853559,Information Services; Internet,0.7390275668024298
+2007,semiconductors,3.142812857763527,Semiconductor,0.7067630079939545
+2007,semiconductor equipment,2.020324900678272,Semiconductor Equip,
+2007,software,3.6019052612821483,Computer Software/Svcs,0.6503743005171952
+2007,computers and peripherals,1.625354422288961,Computers/Peripherals,
+2007,telecom equipment,2.300777555368921,Telecom. Equipment,0.5412578074223439
+2007,internet and information services,4.743219421764124,Information Services; Internet,0.7505073492020345
+2008,semiconductors,1.3271354666408526,Semiconductor,0.29844928631417883
+2008,semiconductor equipment,0.7996737958066977,Semiconductor Equip,
+2008,software,1.9365974437395863,Computer Software/Svcs,0.3496797157311074
+2008,computers and peripherals,0.7042786583447395,Computers/Peripherals,
+2008,telecom equipment,0.9035736414045161,Telecom. Equipment,0.21256565496737542
+2008,internet and information services,1.9577323049931927,Information Services; Internet,0.3097669224252676
+2009,semiconductors,2.4942528475761128,Semiconductor,0.5609133362477229
+2009,semiconductor equipment,1.8216717032510876,Semiconductor Equip,
+2009,software,2.9845648097300876,Computer Software/Svcs,0.5389048599755468
+2009,computers and peripherals,1.2831686028134908,Computers/Peripherals,
+2009,telecom equipment,1.3892767918492779,Telecom. Equipment,0.3268272973649183
+2009,internet and information services,3.231161316415841,Information Services; Internet,0.5112583034426618
+2010,semiconductors,3.1310886345488433,Semiconductor,0.7041264376219283
+2010,semiconductor equipment,2.7628800723409066,Semiconductor Equip,
+2010,software,3.3666272205635606,Computer Software/Svcs,0.6078915642819456
+2010,computers and peripherals,1.4888280892794263,Computers/Peripherals,
+2010,telecom equipment,1.5004745119305862,Telecom. Equipment,0.3529865555779192
+2010,internet and information services,3.5188800350226064,Information Services; Internet,0.5567832926149017
+2011,semiconductors,2.05634329586459,Semiconductor,0.46243522571295703
+2011,semiconductor equipment,0.9742204645705221,Semiconductor Equip,
+2011,software,3.0742711529049354,Computer Software,0.5551025931090189
+2011,computers and peripherals,1.3943283608141295,Computers/Peripherals,
+2011,telecom equipment,1.2502284065828464,Telecom. Equipment,0.2941161715286537
+2011,internet and information services,3.4253284348249937,Information Services; Internet,0.5419808647205148
+2012,semiconductors,2.15564950808504,Semiconductor,0.48476743588195725
+2012,semiconductor equipment,1.44137556255507,Semiconductor Equip,
+2012,software,3.33108674112428,Computer Software,0.6014742343471933
+2012,computers and peripherals,1.37894249007831,Computers/Peripherals,
+2012,telecom equipment,1.26785381363871,Telecom. Equipment,0.2982625476768917
+2012,internet and information services,3.65756184494684,Information Services; Internet,0.5787265569452847
+2013,semiconductors,2.7960207429755797,Semiconductor,0.6287755969425274
+2013,semiconductor equipment,2.421391824599017,Semiconductor Equip,
+2013,software,5.773237699112314,Computer Software; Internet software and services,1.0424386978304676
+2013,computers and peripherals,2.0026042334058833,Computers/Peripherals,
+2013,telecom equipment,2.8422153588528056,Telecom. Equipment,0.6686310242226384
+2013,internet and information services,4.90006361996556,Information Services; Internet software and services; Retail (Internet),0.7753244012847944
+2014,semiconductors,3.213803068376684,Semiconductor,0.7227274503778333
+2014,semiconductor equipment,2.7583398927592264,Semiconductor Equip,
+2014,software,4.704436104856399,Software (Entertainment); Software (Internet); Software (System & Application),0.8494516426938715
+2014,computers and peripherals,2.446300692325133,Computers/Peripherals,
+2014,telecom equipment,3.051365785716764,Telecom. Equipment,0.7178336519176403
+2014,internet and information services,5.14234197839494,Information Services; Software (Internet),0.8136594797168663
+2015,semiconductors,3.1495561950534277,Semiconductor,0.7082794652450297
+2015,semiconductor equipment,2.3530723285093726,Semiconductor Equip,
+2015,software,5.626358181088988,Software (Entertainment); Software (Internet); Software (System & Application),1.0159175494755774
+2015,computers and peripherals,1.7623564485975467,Computers/Peripherals,
+2015,telecom equipment,2.7737371758167715,Telecom. Equipment,0.6525215350111068
+2015,internet and information services,5.839494381566826,Information Services; Software (Internet),0.9239681025255835
+2016,semiconductors,4.0,Semiconductor,0.8995292306356386
+2016,semiconductor equipment,2.86,Semiconductor Equip,
+2016,software,5.37,Software (Entertainment); Software (Internet); Software (System & Application),0.9696284994831127
+2016,computers and peripherals,2.33,Computers/Peripherals,
+2016,telecom equipment,2.97,Telecom. Equipment,0.6986923548055036
+2016,internet and information services,5.71,Information Services; Software (Internet),0.9034785412372445
+2017,semiconductors,4.351967473967323,Semiconductor,0.9786804884022875
+2017,semiconductor equipment,3.227379551918291,Semiconductor Equip,
+2017,software,7.2338526265078045,Software (Entertainment); Software (Internet); Software (System & Application),1.3061731224809565
+2017,computers and peripherals,3.0332971263837245,Computers/Peripherals,
+2017,telecom equipment,3.475926178085971,Telecom. Equipment,0.8177114634669971
+2017,internet and information services,7.036570481517178,Information Services; Software (Internet),1.1133783597117681
+2018,semiconductors,3.71,Semiconductor,0.8343133614145548
+2018,semiconductor equipment,1.94,Semiconductor Equip,
+2018,software,6.526666666666666,Software (Entertainment); Software (Internet); Software (System & Application),1.1784808206008284
+2018,computers and peripherals,2.08,Computers/Peripherals,
+2018,telecom equipment,3.37,Telecom. Equipment,0.7927923352506893
+2018,internet and information services,6.525,Information Services; Software (Internet),1.0324338846887953
+2019,semiconductors,5.375629898781796,Semiconductor,1.208884056758281
+2019,semiconductor equipment,3.9985726938741943,Semiconductor Equip,
+2019,software,7.72052027314425,Software (Entertainment); Software (Internet); Software (System & Application),1.3940477630684935
+2019,computers and peripherals,3.2265807729785143,Computers/Peripherals,
+2019,telecom equipment,3.5022588908180445,Telecom. Equipment,0.8239062328498891
+2019,internet and information services,8.405725806186224,Information Services; Software (Internet),1.3300162678482295
+2020,semiconductors,7.159084587076163,Semiconductor,1.6099514626670197
+2020,semiconductor equipment,5.143851768897692,Semiconductor Equip,
+2020,software,11.885589876904637,Software (Entertainment); Software (Internet); Software (System & Application),2.146109250989705
+2020,computers and peripherals,5.140639765434694,Computers/Peripherals,
+2020,telecom equipment,3.564182895581489,Telecom. Equipment,0.8384738519432083
+2020,internet and information services,13.107078415232767,Information Services; Software (Internet),2.073899139488034
+2026,semiconductors,15.70064938278062,Semiconductor,3.530798264943141
+2026,semiconductor equipment,7.607009043397782,Semiconductor Equip,
+2026,software,10.032481657885715,Software (Entertainment); Software (Internet); Software (System & Application),1.8115046808245021
+2026,computers and peripherals,6.629803188728592,Computers/Peripherals,
+2026,telecom equipment,6.5160940958665385,Telecom. Equipment,1.5329108175000776
+2026,internet and information services,5.8867860038987425,Information Services; Software (Internet),0.9314509336914648
