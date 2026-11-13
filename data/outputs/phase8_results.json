@@ -1,0 +1,208 @@
+{
+ "Y3": {
+  "median_gap_all": 0.06307807193397778,
+  "share_months_negative": 0.08465608465608465
+ },
+ "H1": {
+  "fear_episode_starts": [
+   "2011-08-17",
+   "2015-09-01",
+   "2016-01-21",
+   "2018-11-01",
+   "2020-03-18",
+   "2022-03-07",
+   "2022-06-27",
+   "2022-10-21",
+   "2025-04-17"
+  ],
+  "by_item": {
+   "revenue_ttm": {
+    "episodes": 9,
+    "share_episodes_falling": 0.0,
+    "mean_diff_vs_other": -0.025947529694257385,
+    "p_one_sided": 0.0011
+   },
+   "cfo_ttm": {
+    "episodes": 9,
+    "share_episodes_falling": 0.3333333333333333,
+    "mean_diff_vs_other": -0.025504265152068807,
+    "p_one_sided": 0.0784078407840784
+   },
+   "capex_ttm": {
+    "episodes": 9,
+    "share_episodes_falling": 0.2222222222222222,
+    "mean_diff_vs_other": -0.06806505791379354,
+    "p_one_sided": 0.0042
+   }
+  },
+  "counts_against": true
+ },
+ "H2": {
+  "mean_IQR_KBRI_rel": 13.138837216796444,
+  "mean_IQR_KBRI_abs": 13.491998359005747,
+  "mean_eta2_group": 0.12905901479284163,
+  "perm_p": 0.0,
+  "months": 193,
+  "counts_against": false
+ },
+ "H3": {
+  "episodes": [
+   {
+    "peak": "2011-02-18",
+    "trough": "2011-08-19",
+    "drawdown": -0.24095978623334935,
+    "market_part": -0.17462370836134702,
+    "duration_part": -0.010093016751970314,
+    "credit_part": 0.004710534345591116,
+    "ai_specific_residual": -0.09346296399164242,
+    "residual_share_of_fall": 0.3598066478480627,
+    "rev_growth_2q_around_peak": 0.12156185686545773,
+    "rev_growth_2q_after_trough": 0.08241147480403943,
+    "rpo_growth_2q_after_trough": NaN
+   },
+   {
+    "peak": "2015-05-28",
+    "trough": "2016-02-11",
+    "drawdown": -0.20345607490270767,
+    "market_part": -0.15921561881206953,
+    "duration_part": 0.000277221618375618,
+    "credit_part": 0.009745801651970159,
+    "ai_specific_residual": -0.11376342637639242,
+    "residual_share_of_fall": 0.5423385409624676,
+    "rev_growth_2q_around_peak": 0.0248091206100578,
+    "rev_growth_2q_after_trough": 0.022261001714667605,
+    "rpo_growth_2q_after_trough": NaN
+   },
+   {
+    "peak": "2018-08-29",
+    "trough": "2018-12-24",
+    "drawdown": -0.2445654085439305,
+    "market_part": -0.2528480871751024,
+    "duration_part": 0.0017679067104045452,
+    "credit_part": 0.005657643965198394,
+    "ai_specific_residual": -0.058916040476310994,
+    "residual_share_of_fall": 0.22091140719681696,
+    "rev_growth_2q_around_peak": 0.06126517187193903,
+    "rev_growth_2q_after_trough": 0.028536200465716366,
+    "rpo_growth_2q_after_trough": 0.09087055494189333
+   },
+   {
+    "peak": "2020-02-19",
+    "trough": "2020-03-20",
+    "drawdown": -0.3175037549893559,
+    "market_part": -0.48617647394932656,
+    "duration_part": 0.0006519843791311564,
+    "credit_part": 0.026051764700670547,
+    "ai_specific_residual": 0.11129880612499865,
+    "residual_share_of_fall": -0.32071574721980145,
+    "rev_growth_2q_around_peak": 0.0515744201785564,
+    "rev_growth_2q_after_trough": 0.06297827423407476,
+    "rpo_growth_2q_after_trough": 0.08799938800140139
+   },
+   {
+    "peak": "2021-11-16",
+    "trough": "2022-10-14",
+    "drawdown": -0.4423511244855467,
+    "market_part": -0.32796555155609813,
+    "duration_part": 0.05653759199829049,
+    "credit_part": -0.03766910806039568,
+    "ai_specific_residual": -0.21175046204970321,
+    "residual_share_of_fall": 0.4136138020980514,
+    "rev_growth_2q_around_peak": 0.059099573078464696,
+    "rev_growth_2q_after_trough": 0.011725689986832322,
+    "rpo_growth_2q_after_trough": 0.07972830807896836
+   },
+   {
+    "peak": "2025-02-18",
+    "trough": "2025-04-08",
+    "drawdown": -0.28724773374504986,
+    "market_part": -0.2886831789768952,
+    "duration_part": -0.00041827537995011094,
+    "credit_part": 0.00305176046447803,
+    "ai_specific_residual": -0.033518122440063025,
+    "residual_share_of_fall": 0.10280245242774107,
+    "rev_growth_2q_around_peak": 0.052225638554881604,
+    "rev_growth_2q_after_trough": 0.07884411560067783,
+    "rpo_growth_2q_after_trough": 0.9364447663812463
+   }
+  ],
+  "counts_against": false
+ },
+ "H4": {
+  "test_months": 94,
+  "event_rate_test": 0.4148936170212766,
+  "train_months_first": 74,
+  "a_price": {
+   "AUC": 0.5016317016317017,
+   "Brier": 0.3075349467902742,
+   "R2_oos_vs_hist_mean": -0.40638342389226856
+  },
+  "b_kmsi": {
+   "AUC": 0.43403263403263403,
+   "Brier": 0.33380133126414013,
+   "R2_oos_vs_hist_mean": -0.5289625680441716
+  },
+  "c_kmsi_kbri": {
+   "AUC": 0.36643356643356645,
+   "Brier": 0.36005922254194,
+   "R2_oos_vs_hist_mean": -0.722536870200204
+  },
+  "d_price_gsadf": {
+   "AUC": 0.5305361305361306,
+   "Brier": 0.3071469727705043,
+   "R2_oos_vs_hist_mean": -0.4071385699474721
+  },
+  "AUC_gain_c_vs_a": -0.13519813519813523,
+  "AUC_gain_c_vs_a_boot_p": 0.998,
+  "AUC_gain_c_vs_gsadf": -0.16410256410256413,
+  "AUC_gain_c_vs_gsadf_boot_p": 0.9992,
+  "ClarkWest_p_a_vs_c": 0.9307063777668908,
+  "ClarkWest_p_a_vs_b": 0.8887522915174335,
+  "DM_p_c_vs_gsadf_one_sided": 0.943291397369767,
+  "counts_against": true,
+  "counts_against_vs_gsadf": true
+ },
+ "H5": {
+  "incremental_load_TWh_by_scenario": {
+   "A: sustained build-out (LBNL high)": 404.0,
+   "B: correction and consolidation (LBNL midpoint)": 276.5,
+   "C: overbuild and stranding (LBNL low)": 149.0
+  },
+  "idle_ppe_usd_at_40pct_cut_specialists": 51838707200.0,
+  "scope2_gap_by_entity_period": {
+   "AMZN 2023": 0.8219527760051053,
+   "AMZN 2025": 0.8285976168652612,
+   "GOOGL 2025": 0.8141754738030326,
+   "META 2024": 0.9997724282210456,
+   "MSFT FY2020": 0.8946343611195042,
+   "MSFT FY2024": 0.9739748445260888,
+   "Four hyperscalers (latest year each) mixed": 0.8711426443943191
+  },
+  "counts_against": false
+ },
+ "holm_adjusted": {
+  "H2_eta2_perm": 0.0,
+  "H1_revenue": 0.0077,
+  "H1_capex": 0.0252,
+  "H1_cfo": 0.39203920392039204,
+  "H4_CW_a_vs_c": 1.0,
+  "H4_DM_c_vs_gsadf": 1.0,
+  "H4_AUC_c_vs_a": 1.0,
+  "H4_AUC_c_vs_gsadf": 1.0
+ },
+ "raw_p": {
+  "H1_revenue": 0.0011,
+  "H1_cfo": 0.0784078407840784,
+  "H1_capex": 0.0042,
+  "H2_eta2_perm": 0.0,
+  "H4_AUC_c_vs_a": 0.998,
+  "H4_CW_a_vs_c": 0.9307063777668908,
+  "H4_AUC_c_vs_gsadf": 0.9992,
+  "H4_DM_c_vs_gsadf": 0.943291397369767
+ },
+ "disclosure_basket": {
+  "start": "2017-04-03",
+  "max_drawdown_since_2024": -0.4613963281524106,
+  "trough_date": "2025-04-04"
+ }
+}
