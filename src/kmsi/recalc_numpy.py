@@ -17,7 +17,9 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[2]
 STAGED = ROOT / "data" / "staged"
-CFG = yaml.safe_load((ROOT / "config" / "kmsi_v1.0.yaml").read_text())
+import os
+VERSION = os.environ.get("KMSI_VERSION", "1.1")
+CFG = yaml.safe_load((ROOT / "config" / f"kmsi_v{VERSION}.yaml").read_text())
 START = np.datetime64("1986-01-02")
 
 
@@ -166,7 +168,7 @@ if __name__ == "__main__":
     import warnings
     warnings.simplefilter("ignore")
     b = main()
-    a = pd.read_parquet(ROOT / "data" / "outputs" / "kmsi_v1.0_daily.parquet")
+    a = pd.read_parquet(ROOT / "data" / "outputs" / f"kmsi_v{VERSION}_daily.parquet")
     a.index = pd.DatetimeIndex(a.index).astype("datetime64[ns]")
     b.index = b.index.astype("datetime64[ns]")
     cols = ["kmsi", "weight_coverage"] + [c for c in b.columns if c.startswith("c_")]

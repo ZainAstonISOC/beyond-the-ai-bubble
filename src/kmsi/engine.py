@@ -32,7 +32,9 @@ from scipy.stats import norm
 ROOT = Path(__file__).resolve().parents[2]
 STAGED = ROOT / "data" / "staged"
 OUT = ROOT / "data" / "outputs"
-CFG_PATH = ROOT / "config" / "kmsi_v1.0.yaml"
+import os
+VERSION = os.environ.get("KMSI_VERSION", "1.1")
+CFG_PATH = ROOT / "config" / f"kmsi_v{VERSION}.yaml"
 CALENDAR_START = "1986-01-02"
 
 
@@ -219,10 +221,10 @@ def run(cutoff: str | None = None, cfg: dict | None = None, write: bool = True) 
     out = {"raw": raw, "sub": sub, "components": comps, "result": res}
     if write:
         OUT.mkdir(parents=True, exist_ok=True)
-        res.to_parquet(OUT / "kmsi_v1.0_daily.parquet")
-        res.drop(columns=[]).to_csv(OUT / "kmsi_v1.0_daily.csv", float_format="%.6f")
-        raw.to_parquet(OUT / "kmsi_v1.0_raw_subindicators.parquet")
-        sub.to_parquet(OUT / "kmsi_v1.0_sub_scores.parquet")
+        res.to_parquet(OUT / f"kmsi_v{VERSION}_daily.parquet")
+        res.drop(columns=[]).to_csv(OUT / f"kmsi_v{VERSION}_daily.csv", float_format="%.6f")
+        raw.to_parquet(OUT / f"kmsi_v{VERSION}_raw_subindicators.parquet")
+        sub.to_parquet(OUT / f"kmsi_v{VERSION}_sub_scores.parquet")
         last = res["kmsi"].last_valid_index()
         meta = {
             "model_version": cfg["version"], "config_sha": h,
@@ -234,7 +236,7 @@ def run(cutoff: str | None = None, cfg: dict | None = None, write: bool = True) 
             "weights": {k: v["weight"] for k, v in cfg["components"].items()},
             "source_manifest": "data/raw/manifest.json",
         }
-        (OUT / "kmsi_v1.0_release.json").write_text(json.dumps(meta, indent=1))
+        (OUT / f"kmsi_v{VERSION}_release.json").write_text(json.dumps(meta, indent=1))
     return out
 
 

@@ -1,0 +1,186 @@
+{
+ "convergent": {
+  "nfci": [
+   -0.4380232829998757,
+   1572,
+   "1996-08-28",
+   "2026-11-11"
+  ],
+  "equity_pc": [
+   -0.388910374847426,
+   3253,
+   "2006-11-01",
+   "2019-10-04"
+  ],
+  "aaii_bull_bear": [
+   0.31513892579121067,
+   1570,
+   "1996-08-29",
+   "2026-11-12"
+  ],
+  "pass": true
+ },
+ "discriminant": {
+  "r2": 0.4927522668342902,
+  "n": 7617,
+  "pass": true
+ },
+ "effective_dimension": {
+  "eff_n": 4.3316178028340415,
+  "pc1_share": 0.41357647317330765,
+  "eigen": [
+   3.308611785386462,
+   1.1629194637700202,
+   0.88693300739877,
+   0.8188847313655326,
+   0.7324283331490604,
+   0.5787030477085362,
+   0.34628457588479983,
+   0.16523505533682006
+  ],
+  "sample": [
+   "2008-06-17",
+   "2026-11-12",
+   4632
+  ],
+  "corr": {
+   "momentum": {
+    "momentum": 1.0,
+    "breadth": 0.57,
+    "volatility": 0.51,
+    "options": -0.09,
+    "credit": 0.59,
+    "safe_haven": 0.77,
+    "positioning": 0.3,
+    "ai_momentum": 0.36
+   },
+   "breadth": {
+    "momentum": 0.57,
+    "breadth": 1.0,
+    "volatility": 0.26,
+    "options": -0.12,
+    "credit": 0.44,
+    "safe_haven": 0.4,
+    "positioning": 0.17,
+    "ai_momentum": 0.21
+   },
+   "volatility": {
+    "momentum": 0.51,
+    "breadth": 0.26,
+    "volatility": 1.0,
+    "options": 0.01,
+    "credit": 0.58,
+    "safe_haven": 0.42,
+    "positioning": 0.05,
+    "ai_momentum": 0.19
+   },
+   "options": {
+    "momentum": -0.09,
+    "breadth": -0.12,
+    "volatility": 0.01,
+    "options": 1.0,
+    "credit": -0.12,
+    "safe_haven": -0.01,
+    "positioning": -0.12,
+    "ai_momentum": 0.07
+   },
+   "credit": {
+    "momentum": 0.59,
+    "breadth": 0.44,
+    "volatility": 0.58,
+    "options": -0.12,
+    "credit": 1.0,
+    "safe_haven": 0.5,
+    "positioning": 0.33,
+    "ai_momentum": 0.3
+   },
+   "safe_haven": {
+    "momentum": 0.77,
+    "breadth": 0.4,
+    "volatility": 0.42,
+    "options": -0.01,
+    "credit": 0.5,
+    "safe_haven": 1.0,
+    "positioning": 0.1,
+    "ai_momentum": 0.3
+   },
+   "positioning": {
+    "momentum": 0.3,
+    "breadth": 0.17,
+    "volatility": 0.05,
+    "options": -0.12,
+    "credit": 0.33,
+    "safe_haven": 0.1,
+    "positioning": 1.0,
+    "ai_momentum": 0.06
+   },
+   "ai_momentum": {
+    "momentum": 0.36,
+    "breadth": 0.21,
+    "volatility": 0.19,
+    "options": 0.07,
+    "credit": 0.3,
+    "safe_haven": 0.3,
+    "positioning": 0.06,
+    "ai_momentum": 1.0
+   }
+  }
+ },
+ "ablation": {
+  "corr_without": {
+   "momentum": 0.9904836979619637,
+   "breadth": 0.9863657170160471,
+   "volatility": 0.974109614833182,
+   "options": 0.9906432795372873,
+   "credit": 0.9894411837530874,
+   "safe_haven": 0.9915474636372282,
+   "positioning": 0.9912845957381201,
+   "ai_momentum": 0.987165482146049
+  },
+  "redundant": [
+   "momentum",
+   "breadth",
+   "options",
+   "credit",
+   "safe_haven",
+   "positioning",
+   "ai_momentum"
+  ]
+ },
+ "weights": {
+  "agreement": {
+   "equal": 0.9186031245897335,
+   "risk_heavy": 0.8190888801365367,
+   "behaviour_heavy": 0.762438009918413
+  },
+  "pass": false
+ },
+ "windows": {
+  "agreement": {
+   "504": 0.7543403964456596,
+   "2520": 0.8424576604962584,
+   "expanding": 0.8167257450439805
+  },
+  "pass": false
+ },
+ "transform": {
+  "corr": 0.9967352042902116,
+  "pass": true
+ },
+ "episodes": {
+  "Dot-com peak (24 Mar 2000)": 42.5,
+  "Lehman aftermath (10 Oct 2008)": 21.8,
+  "Market low (20 Nov 2008)": 18.4,
+  "COVID crash (16 Mar 2020)": 10.2,
+  "COVID low (23 Mar 2020)": 12.6,
+  "2022 low (16 Jun 2022)": 21.4,
+  "2022 low (12 Oct 2022)": 24.5,
+  "Tariff shock (8 Apr 2025)": 21.4,
+  "5 Nov 2026 sell-off": 35.8,
+  "Latest (12 Nov 2026)": 49.1
+ },
+ "benchmarks": {
+  "corr_kmsi_vix_pct_inverted": 0.6532633475575377,
+  "corr_kmsi_spx_drawdown": 0.20321759264641057
+ }
+}
