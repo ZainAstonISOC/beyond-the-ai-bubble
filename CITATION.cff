@@ -19,3 +19,7 @@ abstract: >-
   Open, point-in-time, reproducible indices of market sentiment (KMSI), AI-specific
   speculative risk (KBRI) and climate-finance exposure of AI infrastructure (KCEI),
   built only from public data under a pre-registered specification.
+identifiers:
+  - type: url
+    value: "https://osf.io/fkude"
+    description: "OSF pre-registration of specification v1.0 (Secondary Data Preregistration, registered 13 Nov 2026)"
