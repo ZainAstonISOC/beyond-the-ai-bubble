@@ -107,6 +107,12 @@
   "retrieved_utc": "2026-11-13T01:20:51+00:00",
   "sha256": "89deacd0816c7ba75e838cba3d5b228796864077f7315a2d71ca7767a7e928ef"
  },
+ "damodaran/histimpl.xls": {
+  "bytes": 113152,
+  "origin": "https://pages.stern.nyu.edu/~adamodar/pc/datasets/histimpl.xls",
+  "retrieved_utc": "2026-11-13T07:55:36+00:00",
+  "sha256": "bb4d8da0a371a00af06172ec41dcef35a9ae30d6ab9c03d58ab5d2187e1e406f"
+ },
  "edgar/company_tickers.json": {
   "bytes": 796325,
   "origin": "https://www.sec.gov/files/company_tickers.json",
