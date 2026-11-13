@@ -1,0 +1,5 @@
+{
+ "source": "FRED",
+ "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXUSEU",
+ "lag": "next business day"
+}

@@ -1,0 +1,27 @@
+ticker,cik,name,sic,sicDescription,taxonomies,n_facts,first_filed,n_10K,n_10Q,n_20F,n_6K,fiscal_year_end,group
+NVDA,1045810,NVIDIA CORP,3674,Semiconductors & Related Devices,"['dei', 'ecd', 'ffd', 'invest', 'srt', 'us-gaap']",27281,2009-08-20,25,83,0,0,0131,semis_equipment
+AMD,2488,ADVANCED MICRO DEVICES INC,3674,Semiconductors & Related Devices,"['dei', 'ecd', 'ffd', 'invest', 'srt', 'us-gaap']",24244,2010-08-04,29,99,0,0,1226,semis_equipment
+AVGO,1730168,Broadcom Inc.,3674,Semiconductors & Related Devices,"['dei', 'ffd', 'srt', 'us-gaap']",15453,2018-06-14,8,26,0,0,1101,semis_equipment
+MRVL,1835632,"Marvell Technology, Inc.",3674,Semiconductors & Related Devices,"['dei', 'ecd', 'ffd', 'srt', 'us-gaap']",8423,2021-06-09,5,17,0,0,0130,semis_equipment
+MU,723125,MICRON TECHNOLOGY INC,3674,Semiconductors & Related Devices,"['dei', 'ffd', 'us-gaap']",27533,2010-01-12,31,98,0,0,0902,semis_equipment
+ARM,1973239,ARM HOLDINGS PLC /UK,3674,Semiconductors & Related Devices,"['dei', 'ffd', 'us-gaap']",4745,2023-11-09,0,0,3,36,0331,semis_equipment
+AMAT,6951,APPLIED MATERIALS INC /DE,3674,Semiconductors & Related Devices,"['dei', 'srt', 'us-gaap']",30259,2009-09-01,29,99,0,0,1026,semis_equipment
+LRCX,707549,LAM RESEARCH CORP,3559,"Special Industry Machinery, NEC","['dei', 'ecd', 'us-gaap']",27384,2010-11-03,27,94,0,0,0627,semis_equipment
+KLAC,319201,KLA CORP,3827,Optical Instruments & Lenses,"['dei', 'ecd', 'ffd', 'us-gaap']",33323,2010-11-24,33,99,0,0,0630,semis_equipment
+TSM,1046179,TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD,3674,Semiconductors & Related Devices,"['dei', 'ifrs-full', 'srt']",5981,2018-04-19,0,0,26,1337,1231,semis_equipment
+ASML,937966,ASML HOLDING NV,3559,"Special Industry Machinery, NEC","['dei', 'us-gaap']",11381,2010-02-26,0,0,25,362,1231,semis_equipment
+MSFT,789019,MICROSOFT CORP,7372,Services-Prepackaged Software,"['dei', 'ecd', 'ffd', 'us-gaap']",33058,2009-10-23,33,99,0,0,0630,hyperscalers
+GOOGL,1652044,Alphabet Inc.,7370,"Services-Computer Programming, Data Processing, Etc.","['dei', 'ecd', 'ffd', 'us-gaap']",21504,2015-10-29,11,34,0,0,1231,hyperscalers
+AMZN,1018724,AMAZON COM INC,5961,Retail-Catalog & Mail-Order Houses,"['dei', 'ecd', 'ffd', 'us-gaap']",30289,2009-07-24,26,89,0,0,1231,hyperscalers
+META,1326801,"Meta Platforms, Inc.",7370,"Services-Computer Programming, Data Processing, Etc.","['dei', 'ecd', 'ffd', 'srt', 'us-gaap']",18499,2012-07-31,14,44,0,0,1231,hyperscalers
+ORCL,1341439,ORACLE CORP,7372,Services-Prepackaged Software,"['dei', 'ecd', 'ffd', 'us-gaap']",26367,2009-09-21,21,62,0,0,0531,hyperscalers
+CRWV,1769628,"CoreWeave, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'ffd', 'us-gaap']",3179,2025-05-15,1,6,0,0,1231,specialist_infra
+NBIS,1513845,Nebius Group N.V.,7370,"Services-Computer Programming, Data Processing, Etc.",['us-gaap'],9561,2012-03-02,0,0,16,250,,specialist_infra
+VRT,1674101,Vertiv Holdings Co,3679,"Electronic Components, NEC","['dei', 'ecd', 'us-gaap']",12022,2018-08-07,8,26,0,0,1231,specialist_infra
+SMCI,1375365,"Super Micro Computer, Inc.",3571,Electronic Computers,"['dei', 'ffd', 'srt', 'us-gaap']",24688,2011-11-07,19,56,0,0,0630,specialist_infra
+EQIX,1101239,EQUINIX INC,6798,Real Estate Investment Trusts,"['dei', 'ffd', 'srt', 'us-gaap']",32834,2010-08-04,25,80,0,0,1231,specialist_infra
+DLR,1297996,"DIGITAL REALTY TRUST, INC.",6798,Real Estate Investment Trusts,"['dei', 'ecd', 'ffd', 'invest', 'srt', 'us-gaap']",24669,2010-08-12,22,67,0,0,1231,specialist_infra
+PLTR,1321655,Palantir Technologies Inc.,7372,Services-Prepackaged Software,"['dei', 'ecd', 'srt', 'us-gaap']",8134,2020-11-13,6,19,0,0,1231,software_apps
+NOW,1373715,"ServiceNow, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'ffd', 'srt', 'us-gaap']",22063,2012-08-10,14,44,0,0,1231,software_apps
+CRM,1108524,"Salesforce, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'ffd', 'us-gaap']",31394,2009-08-25,22,67,0,0,0131,software_apps
+SNOW,1640147,Snowflake Inc.,7372,Services-Prepackaged Software,"['dei', 'ecd', 'srt', 'us-gaap']",10484,2020-12-03,6,18,0,0,0131,software_apps

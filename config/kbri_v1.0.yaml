@@ -1,0 +1,106 @@
+# KBRI v1.0 frozen specification (Build Plan and Technical Specification v1.0, 13 Nov 2026).
+version: "1.0"
+effective_date: "2026-11-13"
+sample_start: "2010-01-01"
+
+universe:
+  min_mcap_usd: 10.0e9
+  min_mcap_specialist_usd: 2.0e9
+  min_quarters_of_filings: 4
+  # Candidates to TEST against the rule. Not a selection: membership is decided by the rule.
+  candidates:
+    semis_equipment: [NVDA, AMD, AVGO, MRVL, MU, ARM, AMAT, LRCX, KLAC, TSM, ASML]
+    hyperscalers: [MSFT, GOOGL, AMZN, META, ORCL]
+    specialist_infra: [CRWV, NBIS, VRT, SMCI, EQIX, DLR]
+    software_apps: [PLTR, NOW, CRM, SNOW]
+
+normalisation:
+  abs: pooled_group_history      # percentile vs all firm-quarters in group, 2010..t
+  abs_min_obs: 40
+  rel: cross_section             # percentile vs group members on date t
+component_min_share: 0.6667
+company_min_weight: 0.75
+fundamental_usable_lag_bdays: 1  # usable the trading day after the EDGAR filing date
+
+components:
+  valuation:      {weight: 0.25, vars: {g_star: risk, g_star_minus_rev_cagr3: risk, ev_sales: risk, fcf_yield: inverse}}
+  quality:        {weight: 0.20, vars: {cfo_to_ni: inverse, fcf_margin: inverse, sloan_accruals: risk, gm_std8: risk, top_customer_share: risk}}
+  capex:          {weight: 0.20, vars: {capex_to_rev: risk, capex_to_cfo: risk, capex_growth_minus_rev_growth: risk, incr_roic3: inverse}}
+  financing:      {weight: 0.15, vars: {net_debt_to_ebitda: risk, interest_cover: inverse, leases_to_assets: risk, share_growth: risk, debt_due24m_to_cash: risk}}
+  concentration:  {weight: 0.10, basket_only: true, vars: {top5_mcap_share: risk, herfindahl: risk, top5_ret63_share: risk}}
+  speculative:    {weight: 0.10, vars: {px_vs_sma200: risk, rv63: risk, net_equity_issuance_to_mcap: risk, tail_day_share63: risk}}
+
+reverse_dcf:
+  horizon_years: 10
+  terminal_growth: 0.03
+  erp: 0.05
+  beta_months: 60
+  beta_cap: [0.8, 1.8]
+  margin: best_3y_avg_fcf_margin_since_2010   # group median if negative
+  sensitivity: {terminal_growth: [0.02, 0.04], margin_shift: [-0.05, 0.05], erp: damodaran_implied}
+
+# XBRL tag priority: first tag with a value for the period wins. Frozen before any data was pulled.
+tags:
+  revenue: [RevenueFromContractWithCustomerExcludingAssessedTax, Revenues, SalesRevenueNet, RevenueFromContractWithCustomerIncludingAssessedTax, SalesRevenueGoodsNet]
+  cost_of_revenue: [CostOfRevenue, CostOfGoodsAndServicesSold, CostOfGoodsSold]
+  gross_profit: [GrossProfit]
+  operating_income: [OperatingIncomeLoss]
+  net_income: [NetIncomeLoss, ProfitLoss]
+  pretax_income: [IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest, IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments]
+  income_tax: [IncomeTaxExpenseBenefit]
+  cfo: [NetCashProvidedByUsedInOperatingActivities, NetCashProvidedByUsedInOperatingActivitiesContinuingOperations]
+  # REIT fallbacks added 13 Nov 2026 before any KBRI result (EQIX, DLR report capex under property tags; acquisitions of real estate excluded, as M&A is for others)
+  capex: [PaymentsToAcquirePropertyPlantAndEquipment, PaymentsToAcquireProductiveAssets, PaymentsForCapitalImprovements, PaymentsToAcquireOtherPropertyPlantAndEquipment, PaymentsToDevelopRealEstateAssets]
+  dna: [DepreciationDepletionAndAmortization, DepreciationAndAmortization, DepreciationAmortizationAndAccretionNet, Depreciation]
+  interest_expense: [InterestExpense, InterestExpenseNonoperating, InterestExpenseDebt]
+  equity_issued: [ProceedsFromIssuanceOfCommonStock, ProceedsFromStockOptionsExercised]
+  equity_repurchased: [PaymentsForRepurchaseOfCommonStock]
+  diluted_shares: [WeightedAverageNumberOfDilutedSharesOutstanding]
+  total_assets: [Assets]
+  equity: [StockholdersEquity, StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest]
+  cash: [CashAndCashEquivalentsAtCarryingValue, CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents]
+  st_investments: [ShortTermInvestments, MarketableSecuritiesCurrent, AvailableForSaleSecuritiesDebtSecuritiesCurrent]
+  debt_total: [LongTermDebt, DebtInstrumentCarryingAmount]
+  debt_noncurrent: [LongTermDebtNoncurrent]
+  debt_current: [LongTermDebtCurrent, DebtCurrent]
+  short_term_borrowings: [CommercialPaper, ShortTermBorrowings]
+  op_lease_liab: [OperatingLeaseLiability]
+  op_lease_liab_noncurrent: [OperatingLeaseLiabilityNoncurrent]
+  op_lease_liab_current: [OperatingLeaseLiabilityCurrent]
+  fin_lease_liab: [FinanceLeaseLiability]
+  fin_lease_liab_noncurrent: [FinanceLeaseLiabilityNoncurrent]
+  fin_lease_liab_current: [FinanceLeaseLiabilityCurrent]
+  rpo: [RevenueRemainingPerformanceObligation]
+  shares_outstanding_cover: ["dei:EntityCommonStockSharesOutstanding"]
+
+# Predecessor registrants whose filings carry the same business before re-registration.
+predecessors:
+  GOOGL: [{cik: 1288776, name: "Google Inc."}]
+  AVGO: [{cik: 1441634, name: "Avago Technologies Ltd"}, {cik: 1649338, name: "Broadcom Ltd / Broadcom Pte. Ltd."}]
+  MRVL: [{cik: 1058057, name: "Marvell Technology Group Ltd"}]
+
+# Foreign private issuers: annual 20-F XBRL only; values converted to USD at the period-end rate
+foreign:
+  TSM:  {currency: TWD, fx_series: DEXTAUS, fx_quote: per_usd, adr_ratio: 5}
+  ASML: {currency: EUR, fx_series: DEXUSEU, fx_quote: usd_per, adr_ratio: 1}
+  ARM:  {currency: USD, adr_ratio: 1}
+  NBIS: {currency: USD, adr_ratio: 1}
+
+ifrs_tags:
+  revenue: [Revenue, RevenueFromContractsWithCustomers]
+  gross_profit: [GrossProfit]
+  operating_income: [ProfitLossFromOperatingActivities]
+  net_income: [ProfitLoss, ProfitLossAttributableToOwnersOfParent]
+  pretax_income: [ProfitLossBeforeTax]
+  income_tax: [IncomeTaxExpenseContinuingOperations]
+  cfo: [CashFlowsFromUsedInOperatingActivities]
+  capex: [PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities, PurchaseOfPropertyPlantAndEquipment]
+  dna: [DepreciationAndAmortisationExpense, DepreciationPropertyPlantAndEquipment]
+  interest_expense: [InterestExpense, FinanceCosts]
+  total_assets: [Assets]
+  equity: [EquityAttributableToOwnersOfParent, Equity]
+  cash: [CashAndCashEquivalents]
+  debt_noncurrent: [NoncurrentPortionOfNoncurrentBondsIssued, LongtermBorrowings]
+  debt_current: [CurrentPortionOfLongtermBorrowings, ShorttermBorrowings]
+  lease_liab: [LeaseLiabilities]
+  diluted_shares: [AdjustedWeightedAverageShares, WeightedAverageShares]

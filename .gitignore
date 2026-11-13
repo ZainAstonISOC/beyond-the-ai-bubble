@@ -6,3 +6,5 @@ data/staged/aaii_*
 data/raw/cftc/*.zip
 __pycache__/
 *.pyc
+data/raw/edgar_docs/
+data/raw/edgar_archive/
