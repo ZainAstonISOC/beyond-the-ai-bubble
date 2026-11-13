@@ -1,0 +1,32 @@
+{
+ "note": "Exploratory, not registered. LSEG maturity data replace the debt_due24m_to_cash proxy.",
+ "coverage_old_proxy": 0.9977425637393768,
+ "coverage_lseg": 0.8892085694050992,
+ "rank_corr_variable_old_vs_new": 0.5477968027939208,
+ "firm_months_compared": 16468,
+ "corr_company_kbri": 0.9934896712031582,
+ "corr_financing_component": 0.9272238459981368,
+ "company_band_agreement": 0.9563395676463444,
+ "corr_value_chain_basket": 0.8619236611776592,
+ "max_abs_basket_diff": 9.20771404274116,
+ "basket_diff_by_year": {
+  "2010": -8.69,
+  "2011": -2.17,
+  "2012": -0.29,
+  "2013": 0.06,
+  "2014": -0.37,
+  "2015": -0.19,
+  "2016": -0.02,
+  "2017": -0.17,
+  "2018": -0.14,
+  "2019": -0.26,
+  "2020": -0.23,
+  "2021": -0.16,
+  "2022": -0.17,
+  "2023": -0.25,
+  "2024": -0.26,
+  "2025": -0.33,
+  "2026": -0.27
+ },
+ "corr_value_chain_basket_2012_on": 0.9961683189773051
+}
