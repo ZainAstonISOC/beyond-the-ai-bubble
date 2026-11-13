@@ -8,3 +8,14 @@ __pycache__/
 *.pyc
 data/raw/edgar_docs/
 data/raw/edgar_archive/
+# Licensed vendor data (Cboe; Moody's and ICE BofA series via FRED): downloaded by src/ingest, hashes in data/raw/manifest.json
+data/raw/cboe/
+data/raw/fred/BAA10Y.csv
+data/raw/fred/BAMLH0A0HYM2.csv
+data/staged/baa10y.*
+data/staged/bamlh0a0hym2.*
+data/staged/equity_pc.*
+data/staged/skew.*
+data/staged/vix*.*
+data/staged/vvix.*
+data/outputs/kmsi_v1.*_raw_subindicators.parquet
