@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use these indices, data or code, please cite them as below."
+title: "Beyond the AI Bubble: market sentiment (KMSI), speculative risk (KBRI) and climate-finance exposure (KCEI) indices"
+type: software
+authors:
+  - name: "Howden Research"
+    website: "https://howdenresearch.uk"
+version: "0.1.0-pre"
+license: MIT
+repository-code: "https://github.com/howden-research/beyond-the-ai-bubble"
+keywords:
+  - artificial intelligence
+  - asset price bubbles
+  - market sentiment index
+  - speculative risk
+  - climate finance
+  - data centres
+  - pre-registration
+abstract: >-
+  Open, point-in-time, reproducible indices of market sentiment (KMSI), AI-specific
+  speculative risk (KBRI) and climate-finance exposure of AI infrastructure (KCEI),
+  built only from public data under a pre-registered specification.
