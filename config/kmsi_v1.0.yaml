@@ -1,0 +1,65 @@
+# KMSI v1.0 frozen specification (Build Plan and Technical Specification v1.0, 13 Nov 2026).
+# Any change after first results is a new version (methodology paper s.12.4).
+version: "1.0"
+effective_date: "2026-11-13"
+
+normalisation:
+  method: rolling_percentile        # P = 100 * (count(x_s < x_t) + 0.5 * count(x_s == x_t)) / |W|, window includes t
+  window_days: 1260                 # trading days (~5 years)
+  min_obs: 504
+  robust_z_diagnostic: true         # 100 * Phi(z), z = (x - median) / (1.4826 * MAD) over same window
+
+coverage:
+  min_weight: 0.75                  # composite published only if available weight >= 0.75
+  stale_business_days: 3            # daily series
+  weekly_carry_calendar_days: 10    # CFTC positioning after release date
+
+components:
+  momentum:
+    weight: 0.15
+    subs:
+      - {id: spx_vs_sma200, direction: greed}
+      - {id: spx_ret63, direction: greed}
+  breadth:
+    weight: 0.15
+    subs:
+      - {id: sector_share_above_sma200, direction: greed}   # 9 original SPDR sectors
+      - {id: ew_vs_cw_ret63, direction: greed}              # ^SP500EW vs ^GSPC, 63d relative
+  volatility:
+    weight: 0.15
+    subs:
+      - {id: vix, direction: fear}
+      - {id: spx_rv21, direction: fear}
+  options:
+    weight: 0.10
+    subs:
+      - {id: skew, direction: fear}
+      - {id: vix_vix3m, direction: fear}
+  credit:
+    weight: 0.15
+    subs:
+      - {id: baa10y, direction: fear}
+      - {id: baa10y_chg63, direction: fear}
+  safe_haven:
+    weight: 0.10
+    subs:
+      - {id: equity_vs_haven_ret63, direction: greed}
+  positioning:
+    weight: 0.10
+    subs:
+      - {id: cftc_es_net_pct_oi, direction: greed}
+  ai_momentum:
+    weight: 0.10
+    subs:
+      - {id: ai_rel_ret63, direction: greed}
+      - {id: ai_share_above_sma200, direction: greed}
+
+parameters:
+  sma_long: 200
+  ret_window: 63
+  rv_window: 21
+  synthetic_bond_duration: 8.0
+  sectors: [XLB, XLE, XLF, XLI, XLK, XLP, XLU, XLV, XLY]
+  haven_mix: {IEF: 0.5, "GC=F": 0.5}
+
+regimes: [[0, 20, "Extreme fear"], [21, 40, "Fear"], [41, 60, "Neutral"], [61, 80, "Greed"], [81, 100, "Extreme greed"]]

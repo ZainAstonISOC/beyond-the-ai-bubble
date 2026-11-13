@@ -1,0 +1,6 @@
+{
+ "source": "CFTC Traders in Financial Futures",
+ "contract": "13874A",
+ "definition": "(asset manager + leveraged funds net long) / open interest, %",
+ "lag": "+3 calendar days (Friday release of Tuesday data)"
+}

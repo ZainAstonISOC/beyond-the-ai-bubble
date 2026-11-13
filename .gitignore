@@ -1,0 +1,8 @@
+# Redistribution-restricted inputs: hashes are kept in data/raw/manifest.json, files are re-downloaded by src/ingest
+data/raw/yahoo/
+data/raw/aaii/
+data/staged/px_*
+data/staged/aaii_*
+data/raw/cftc/*.zip
+__pycache__/
+*.pyc

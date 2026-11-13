@@ -1,0 +1,5 @@
+{
+ "source": "CFTC TFF",
+ "contract": "13874A",
+ "lag": "+3 calendar days"
+}
