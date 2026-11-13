@@ -19,3 +19,4 @@ data/staged/skew.*
 data/staged/vix*.*
 data/staged/vvix.*
 data/outputs/kmsi_v1.*_raw_subindicators.parquet
+data/licensed/
