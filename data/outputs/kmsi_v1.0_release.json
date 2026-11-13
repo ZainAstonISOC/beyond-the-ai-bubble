@@ -1,0 +1,25 @@
+{
+ "model_version": "1.0",
+ "config_sha": "0dbfb07d8bd0",
+ "calculation_utc": "2026-11-13T01:23:47+00:00",
+ "data_cutoff": "2026-11-12",
+ "first_published": "1996-07-30",
+ "universe": "AI momentum uses ^SOX analogue (provisional until Phase 5)",
+ "transform": {
+  "method": "rolling_percentile",
+  "window_days": 1260,
+  "min_obs": 504,
+  "robust_z_diagnostic": true
+ },
+ "weights": {
+  "momentum": 0.15,
+  "breadth": 0.15,
+  "volatility": 0.15,
+  "options": 0.1,
+  "credit": 0.15,
+  "safe_haven": 0.1,
+  "positioning": 0.1,
+  "ai_momentum": 0.1
+ },
+ "source_manifest": "data/raw/manifest.json"
+}
