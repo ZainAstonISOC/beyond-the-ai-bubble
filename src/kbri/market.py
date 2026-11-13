@@ -57,10 +57,14 @@ def build(month_ends: pd.DatetimeIndex | None = None) -> pd.DataFrame:
     P["usable"] = P["filed"] + BDay(CFG["fundamental_usable_lag_bdays"])
     if month_ends is None:
         month_ends = pd.date_range(CFG["sample_start"], "2026-10-31", freq="BME")
-    groups = {t: g for g, ts in CFG["universe"]["candidates"].items() for t in ts}
+    from src.kbri.candidates import groups as _g
+    groups = {t: g for t, g in _g().items() if t in set(P["ticker"])}
     out = []
     for t, grp in groups.items():
-        px = pd.read_parquet(STAGED / f"px_{t.lower()}.parquet")["value"]
+        pf = STAGED / f"px_{t.lower()}.parquet"
+        if not pf.exists():
+            continue
+        px = pd.read_parquet(pf)["value"]
         sp = splits(t)
         f = P[P["ticker"] == t].sort_values("usable")
         if not len(f):
@@ -76,12 +80,20 @@ def build(month_ends: pd.DatetimeIndex | None = None) -> pd.DataFrame:
             r = fr.iloc[-1].copy()
             fx = fx_to_usd(t, pd.Series([r["period_end"]]))[0]
             sh, sd = r.get("shares_out_cover", np.nan), r.get("shares_out_date", pd.NaT)
-            if pd.notna(sd) and sh > 0:
-                mcap, sh_src = close.iloc[-1] * sh / adr * split_factor_after(sp, sd), "cover"
-            else:   # share classes reported only with dimensions: fall back to diluted weighted-average shares
-                dsh = r.get("diluted_shares_ttm", np.nan)
-                mcap = close.iloc[-1] * dsh / adr * split_factor_after(sp, r["period_end"]) if dsh > 0 else np.nan
-                sh_src = "diluted_avg"
+            dsh = r.get("diluted_shares_ttm", np.nan)
+            assets_usd = r["total_assets"] * fx
+            plaus = lambda mc: np.isfinite(mc) and (not np.isfinite(assets_usd) or assets_usd <= 0 or 0.05 <= mc / assets_usd <= 100)
+            mc_cover = close.iloc[-1] * sh / adr * split_factor_after(sp, sd) if pd.notna(sd) and sh > 0 else np.nan
+            mc_dil = close.iloc[-1] * dsh / adr * split_factor_after(sp, r["period_end"]) if dsh > 0 else np.nan
+            # both counts can be mis-scaled in XBRL; take cover unless implausible, then diluted, else none
+            if plaus(mc_cover):
+                mcap, sh_src = mc_cover, "cover"
+            elif plaus(mc_dil):
+                mcap, sh_src = mc_dil, "diluted_avg"
+            elif np.isfinite(mc_cover) or np.isfinite(mc_dil):
+                mcap, sh_src = np.nan, "rejected: implausible share counts"
+            else:
+                mcap, sh_src = np.nan, "missing share counts"
             out.append({"date": M, "ticker": t, "group": grp, "close": close.iloc[-1], "mcap_usd": mcap, "shares_source": sh_src,
                         "filed": r["filed"], "period_end": r["period_end"], "fx_to_usd": fx,
                         "fund_age_days": (M - r["period_end"]).days,

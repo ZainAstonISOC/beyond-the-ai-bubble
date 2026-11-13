@@ -20,7 +20,8 @@ STAGED.mkdir(parents=True, exist_ok=True)
 
 
 def candidates() -> dict[str, str]:
-    return {t: g for g, ts in CFG["universe"]["candidates"].items() for t in ts}
+    from src.kbri.candidates import pool
+    return pool().set_index("ticker")["group"].to_dict()
 
 
 def cik_map() -> dict[str, int]:
@@ -65,13 +66,17 @@ def pull(ticker: str, cik: int) -> dict:
 
 
 def main():
-    cm = cik_map()
+    from src.kbri.candidates import ciks
+    cm = ciks()
     out = []
     for t, g in candidates().items():
-        if t not in cm:
-            print("NO CIK", t)
+        if (STAGED / f"facts_{t}.parquet").exists() and (STAGED / f"filings_{t}.parquet").exists():
             continue
-        r = pull(t, cm[t])
+        try:
+            r = pull(t, cm[t])
+        except Exception as e:
+            print("FAIL", t, e)
+            continue
         r["group"] = g
         out.append(r)
         print(f"{t:5s} {r['name'][:28]:28s} tax={','.join(r['taxonomies']):24s} facts={r['n_facts']:6d} first={r['first_filed']} "

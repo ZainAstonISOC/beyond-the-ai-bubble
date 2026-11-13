@@ -83,7 +83,7 @@ def parse_instance(path, accn, form, filed) -> pd.DataFrame:
 
 def main():
     added = []
-    tickers = list(candidates())
+    tickers = [t for t in candidates() if (STAGED / f"facts_{t}.parquet").exists()]
     for t in tickers:
         ff = STAGED / f"facts_{t}.parquet"
         facts = pd.read_parquet(ff)
@@ -93,7 +93,8 @@ def main():
         todo = fl[fl["accessionNumber"].map(counts).fillna(0) < 50]
         if not len(todo):
             continue
-        cmap = {v["ticker"].upper(): int(v["cik_str"]) for v in json.loads((STAGED.parents[1] / "raw" / "edgar" / "company_tickers.json").read_text()).values()}
+        from src.kbri.candidates import ciks
+        cmap = ciks()
         new = []
         for _, r in todo.iterrows():
             try:
@@ -106,6 +107,7 @@ def main():
             except Exception as e:
                 print(f"{t:5s} {r['form']} {r['filingDate']} FAILED {e}")
             time.sleep(0.2)
+        new = [d for d in new if len(d)]
         if new:
             nd = pd.concat(new, ignore_index=True)
             facts = facts[~facts["accn"].isin(nd["accn"].unique())]

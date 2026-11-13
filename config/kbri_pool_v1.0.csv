@@ -1,0 +1,164 @@
+ticker,cik,name,sic,group,source
+AMD,2488,ADVANCED MICRO DEVICES INC,3674,semis_equipment,SIC rule (also original candidate)
+ALGM,866291,"ALLEGRO MICROSYSTEMS, INC.",3674,semis_equipment,SIC rule
+AMKR,1047127,"AMKOR TECHNOLOGY, INC.",3674,semis_equipment,SIC rule
+ADI,6281,ANALOG DEVICES INC,3674,semis_equipment,SIC rule
+AMAT,6951,APPLIED MATERIALS INC /DE,3674,semis_equipment,SIC rule (also original candidate)
+AAOI,1158114,"APPLIED OPTOELECTRONICS, INC.",3674,semis_equipment,SIC rule
+ARM,1973239,ARM HOLDINGS PLC /UK,3674,semis_equipment,SIC rule (also original candidate)
+ALAB,1736297,"Astera Labs, Inc.",3674,semis_equipment,SIC rule
+AVGO,1730168,Broadcom Inc.,3674,semis_equipment,SIC rule (also original candidate)
+CRDO,1807794,Credo Technology Group Holding Ltd,3674,semis_equipment,SIC rule
+ENPH,1463101,"Enphase Energy, Inc.",3674,semis_equipment,SIC rule
+FSLR,1274494,"FIRST SOLAR, INC.",3674,semis_equipment,SIC rule
+INTC,50863,INTEL CORP,3674,semis_equipment,SIC rule
+LSCC,855658,LATTICE SEMICONDUCTOR CORP,3674,semis_equipment,SIC rule
+MTSI,1493594,"MACOM Technology Solutions Holdings, Inc.",3674,semis_equipment,SIC rule
+MRVL,1835632,"Marvell Technology, Inc.",3674,semis_equipment,SIC rule (also original candidate)
+MCHP,827054,MICROCHIP TECHNOLOGY INC,3674,semis_equipment,SIC rule
+MU,723125,MICRON TECHNOLOGY INC,3674,semis_equipment,SIC rule (also original candidate)
+MPWR,1280452,"MONOLITHIC POWER SYSTEMS, INC.",3674,semis_equipment,SIC rule
+NVDA,1045810,NVIDIA CORP,3674,semis_equipment,SIC rule (also original candidate)
+NXPI,1413447,NXP Semiconductors N.V.,3674,semis_equipment,SIC rule
+ON,1097864,ON SEMICONDUCTOR CORP,3674,semis_equipment,SIC rule
+Q,2058873,"Qnity Electronics, Inc.",3674,semis_equipment,SIC rule
+RMBS,917273,RAMBUS INC,3674,semis_equipment,SIC rule
+SMTC,88941,SEMTECH CORP,3674,semis_equipment,SIC rule
+SITM,1451809,SITIME Corp,3674,semis_equipment,SIC rule
+SWKS,4127,"SKYWORKS SOLUTIONS, INC.",3674,semis_equipment,SIC rule
+SEDG,1419612,"SOLAREDGE TECHNOLOGIES, INC.",3674,semis_equipment,SIC rule
+TXN,97476,TEXAS INSTRUMENTS INC,3674,semis_equipment,SIC rule
+VIAV,912093,VIAVI SOLUTIONS INC.,3674,semis_equipment,SIC rule
+LRCX,707549,LAM RESEARCH CORP,3559,semis_equipment,SIC rule (also original candidate)
+TER,97210,"TERADYNE, INC",3825,semis_equipment,SIC rule
+VLTO,1967680,Veralto Corp,3825,semis_equipment,SIC rule
+COHR,820318,COHERENT CORP.,3827,semis_equipment,SIC rule
+KLAC,319201,KLA CORP,3827,semis_equipment,SIC rule (also original candidate)
+HPE,1645590,Hewlett Packard Enterprise Co,3570,hardware_networking,SIC rule
+HPQ,47217,HP INC,3570,hardware_networking,SIC rule
+IBM,51143,INTERNATIONAL BUSINESS MACHINES CORP,3570,hardware_networking,SIC rule
+AAPL,320193,Apple Inc.,3571,hardware_networking,SIC rule
+DELL,1571996,Dell Technologies Inc.,3571,hardware_networking,SIC rule
+SMCI,1375365,"Super Micro Computer, Inc.",3571,hardware_networking,SIC rule (also original candidate)
+P,1474432,"Everpure, Inc.",3572,hardware_networking,SIC rule
+NTAP,1002047,"NetApp, Inc.",3572,hardware_networking,SIC rule
+SNDK,2023554,Sandisk Corp,3572,hardware_networking,SIC rule
+STX,1137789,Seagate Technology Holdings plc,3572,hardware_networking,SIC rule
+WDC,106040,WESTERN DIGITAL CORP,3572,hardware_networking,SIC rule
+ANET,1596532,"Arista Networks, Inc.",3576,hardware_networking,SIC rule
+CSCO,858877,"CISCO SYSTEMS, INC.",3576,hardware_networking,SIC rule
+FFIV,1048695,"F5, INC.",3576,hardware_networking,SIC rule
+FTNT,1262039,"Fortinet, Inc.",3577,hardware_networking,SIC rule
+LOGI,1032975,LOGITECH INTERNATIONAL S.A.,3577,hardware_networking,SIC rule
+PANW,1327567,Palo Alto Networks Inc,3577,hardware_networking,SIC rule
+CIEN,936395,CIENA CORP,3661,hardware_networking,SIC rule
+FN,1408710,Fabrinet,3661,hardware_networking,SIC rule
+MSI,68505,"Motorola Solutions, Inc.",3663,hardware_networking,SIC rule
+QCOM,804328,QUALCOMM INC/DE,3663,hardware_networking,SIC rule
+UI,1511737,Ubiquiti Inc.,3663,hardware_networking,SIC rule
+ESE,866706,ESCO TECHNOLOGIES INC,3669,hardware_networking,SIC rule
+LITE,1633978,Lumentum Holdings Inc.,3669,hardware_networking,SIC rule
+CLS,1030894,CELESTICA INC,3672,hardware_networking,SIC rule
+FLEX,866374,FLEX LTD.,3672,hardware_networking,SIC rule
+JBL,898293,JABIL INC,3672,hardware_networking,SIC rule
+SANM,897723,SANMINA CORP,3672,hardware_networking,SIC rule
+TTMI,1116942,TTM TECHNOLOGIES INC,3672,hardware_networking,SIC rule
+GOOGL,1652044,Alphabet Inc.,7370,software_apps,SIC rule (also original candidate)
+APP,1751008,AppLovin Corp,7370,software_apps,SIC rule
+DOCN,1582961,"DigitalOcean Holdings, Inc.",7370,software_apps,SIC rule
+FDS,1013237,FACTSET RESEARCH SYSTEMS INC,7370,software_apps,SIC rule
+FLUT,1635327,Flutter Entertainment plc,7370,software_apps,SIC rule
+MTCH,891103,"Match Group, Inc.",7370,software_apps,SIC rule
+META,1326801,"Meta Platforms, Inc.",7370,software_apps,SIC rule (also original candidate)
+NBIS,1513845,Nebius Group N.V.,7370,specialist_infra,SIC rule (also original candidate)
+PPLI,1800227,People Inc,7370,software_apps,SIC rule
+PINS,1506293,"PINTEREST, INC.",7370,software_apps,SIC rule
+SNAP,1564408,Snap Inc,7370,software_apps,SIC rule
+TTD,1671933,"Trade Desk, Inc.",7370,software_apps,SIC rule
+ZM,1585521,"Zoom Communications, Inc.",7370,software_apps,SIC rule
+CTSH,1058290,COGNIZANT TECHNOLOGY SOLUTIONS CORP,7371,software_apps,SIC rule
+DOCS,1516513,"Doximity, Inc.",7371,software_apps,SIC rule
+EPAM,1352010,"EPAM Systems, Inc.",7371,software_apps,SIC rule
+VRSN,1014473,VERISIGN INC/CA,7371,software_apps,SIC rule
+ZS,1713683,"Zscaler, Inc.",7371,software_apps,SIC rule
+ADBE,796343,ADOBE INC.,7372,software_apps,SIC rule
+APPF,1433195,APPFOLIO INC,7372,software_apps,SIC rule
+APPN,1441683,APPIAN CORP,7372,software_apps,SIC rule
+ASAN,1477720,"Asana, Inc.",7372,software_apps,SIC rule
+TEAM,1650372,Atlassian Corp,7372,software_apps,SIC rule
+ADSK,769397,"Autodesk, Inc.",7372,software_apps,SIC rule
+BSY,1031308,BENTLEY SYSTEMS INC,7372,software_apps,SIC rule
+BILL,1786352,"BILL Holdings, Inc.",7372,software_apps,SIC rule
+XYZ,1512673,"Block, Inc.",7372,software_apps,SIC rule
+CDNS,813672,CADENCE DESIGN SYSTEMS INC,7372,software_apps,SIC rule
+NET,1477333,"Cloudflare, Inc.",7372,software_apps,SIC rule
+CRWV,1769628,"CoreWeave, Inc.",7372,specialist_infra,SIC rule (also original candidate)
+CRWD,1535527,"CrowdStrike Holdings, Inc.",7372,software_apps,SIC rule
+DDOG,1561550,"Datadog, Inc.",7372,software_apps,SIC rule
+DOCU,1261333,"DOCUSIGN, INC.",7372,software_apps,SIC rule
+DBX,1467623,"DROPBOX, INC.",7372,software_apps,SIC rule
+DUOL,1562088,"Duolingo, Inc.",7372,software_apps,SIC rule
+DT,1773383,"Dynatrace, Inc.",7372,software_apps,SIC rule
+ESTC,1707753,Elastic N.V.,7372,software_apps,SIC rule
+FIG,1579878,"Figma, Inc.",7372,software_apps,SIC rule
+GEN,849399,Gen Digital Inc.,7372,software_apps,SIC rule
+GTLB,1653482,Gitlab Inc.,7372,software_apps,SIC rule
+GWRE,1528396,"Guidewire Software, Inc.",7372,software_apps,SIC rule
+HUBS,1404655,HUBSPOT INC,7372,software_apps,SIC rule
+INTU,896878,INTUIT INC.,7372,software_apps,SIC rule
+FROG,1800667,JFrog Ltd,7372,software_apps,SIC rule
+KVYO,1835830,"Klaviyo, Inc.",7372,software_apps,SIC rule
+MANH,1056696,MANHATTAN ASSOCIATES INC,7372,software_apps,SIC rule
+MSFT,789019,MICROSOFT CORP,7372,software_apps,SIC rule (also original candidate)
+MDB,1441816,"MongoDB, Inc.",7372,software_apps,SIC rule
+NTNX,1618732,"Nutanix, Inc.",7372,software_apps,SIC rule
+OKTA,1660134,"Okta, Inc.",7372,software_apps,SIC rule
+ORCL,1341439,ORACLE CORP,7372,software_apps,SIC rule (also original candidate)
+PLTR,1321655,Palantir Technologies Inc.,7372,software_apps,SIC rule (also original candidate)
+PAYC,1590955,"Paycom Software, Inc.",7372,software_apps,SIC rule
+PCTY,1591698,Paylocity Holding Corp,7372,software_apps,SIC rule
+PTC,857005,PTC INC.,7372,software_apps,SIC rule
+RBLX,1315098,Roblox Corp,7372,software_apps,SIC rule
+RBRK,1943896,"Rubrik, Inc.",7372,software_apps,SIC rule
+SAIL,2030781,"SailPoint, Inc.",7372,software_apps,SIC rule
+CRM,1108524,"Salesforce, Inc.",7372,software_apps,SIC rule (also original candidate)
+NOW,1373715,"ServiceNow, Inc.",7372,software_apps,SIC rule (also original candidate)
+SHOP,1594805,SHOPIFY INC.,7372,software_apps,SIC rule
+SNOW,1640147,Snowflake Inc.,7372,software_apps,SIC rule (also original candidate)
+SSNC,1402436,SS&C Technologies Holdings Inc,7372,software_apps,SIC rule
+SNPS,883241,SYNOPSYS INC,7372,software_apps,SIC rule
+TTWO,946581,TAKE TWO INTERACTIVE SOFTWARE INC,7372,software_apps,SIC rule
+TDC,816761,TERADATA CORP /DE/,7372,software_apps,SIC rule
+TWLO,1447669,TWILIO INC,7372,software_apps,SIC rule
+TYL,860731,TYLER TECHNOLOGIES INC,7372,software_apps,SIC rule
+PATH,1734722,"UiPath, Inc.",7372,software_apps,SIC rule
+U,1810806,Unity Software Inc.,7372,software_apps,SIC rule
+VEEV,1393052,VEEVA SYSTEMS INC,7372,software_apps,SIC rule
+GTM,1794515,ZoomInfo Technologies Inc.,7372,software_apps,SIC rule
+AUR,1828108,"Aurora Innovation, Inc.",7373,software_apps,SIC rule
+CACI,16058,CACI INTERNATIONAL INC /DE/,7373,software_apps,SIC rule
+GDDY,1609711,GoDaddy Inc.,7373,software_apps,SIC rule
+IONQ,1824920,"IonQ, Inc.",7373,software_apps,SIC rule
+JKHY,779152,JACK HENRY & ASSOCIATES INC,7373,software_apps,SIC rule
+KD,1867072,"Kyndryl Holdings, Inc.",7373,software_apps,SIC rule
+LDOS,1336920,"Leidos Holdings, Inc.",7373,software_apps,SIC rule
+OTEX,1002638,OPEN TEXT CORP,7373,software_apps,SIC rule
+PSN,275880,PARSONS CORP,7373,software_apps,SIC rule
+IOT,1642896,Samsara Inc.,7373,software_apps,SIC rule
+APLD,1144879,Applied Digital Corp.,7374,software_apps,SIC rule
+ADP,8670,AUTOMATIC DATA PROCESSING INC,7374,software_apps,SIC rule
+CLVT,1764046,CLARIVATE PLC,7374,software_apps,SIC rule
+DXC,1688568,DXC Technology Co,7374,software_apps,SIC rule
+GDRX,1809519,"GoodRx Holdings, Inc.",7374,software_apps,SIC rule
+PEGA,1013857,PEGASYSTEMS INC,7374,software_apps,SIC rule
+RDDT,1713445,"Reddit, Inc.",7374,software_apps,SIC rule
+RNG,1384905,"RingCentral, Inc.",7374,software_apps,SIC rule
+TOST,1650164,"Toast, Inc.",7374,software_apps,SIC rule
+VRSK,1442145,"Verisk Analytics, Inc.",7374,software_apps,SIC rule
+WDAY,1327811,"Workday, Inc.",7374,software_apps,SIC rule
+DLR,1297996,"DIGITAL REALTY TRUST, INC.",6798,specialist_infra,SIC rule (also original candidate)
+EQIX,1101239,EQUINIX INC,6798,specialist_infra,SIC rule (also original candidate)
+AMZN,1018724,AMAZON COM INC,5961,hyperscalers,SIC rule (also original candidate)
+TSM,1046179,TSM,,semis_equipment,original candidate retained
+ASML,937966,ASML,,semis_equipment,original candidate retained
+VRT,1674101,VRT,,specialist_infra,original candidate retained

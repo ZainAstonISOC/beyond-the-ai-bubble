@@ -249,10 +249,22 @@ def build_company(ticker: str) -> pd.DataFrame:
 
 
 def main():
-    tick = [t for g in CFG["universe"]["candidates"].values() for t in g]
+    import sys
+    from src.kbri.candidates import pool
+    tick = list(pool()["ticker"])
+    if len(sys.argv) > 2:                         # optional sharding: python -m ... <shard> <n_shards>
+        k, n = int(sys.argv[1]), int(sys.argv[2])
+        tick = tick[k::n]
     out = []
     for t in tick:
-        d = build_company(t)
+        try:
+            d = build_company(t)
+        except Exception as e:
+            print("FAIL", t, e)
+            continue
+        if not len(d):
+            print("EMPTY", t)
+            continue
         out.append(d)
         last = d.iloc[-1] if len(d) else None
         print(f"{t:5s} events={len(d):3d} first={d.period_end.min().date() if len(d) else None} "
@@ -260,7 +272,8 @@ def main():
               f"cfo={last.cfo_ttm/1e9 if last is not None else np.nan:8.2f} capex={last.capex_ttm/1e9 if last is not None else np.nan:8.2f} "
               f"gm_std8={last.gm_std8 if last is not None else np.nan:.4f}")
     panel = pd.concat(out, ignore_index=True)
-    panel.to_parquet(ROOT / "data" / "staged" / "kbri_fundamentals_pit.parquet")
+    name = "kbri_fundamentals_pit.parquet" if len(sys.argv) <= 2 else f"kbri_fundamentals_pit_shard{sys.argv[1]}.parquet"
+    panel.to_parquet(ROOT / "data" / "staged" / name)
     return panel
 
 

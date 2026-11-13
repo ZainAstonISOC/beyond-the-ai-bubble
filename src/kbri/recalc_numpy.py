@@ -72,21 +72,23 @@ def main():
             cols = []
             for var, direction in c["vars"].items():
                 sc = np.full(len(V), np.nan)
-                for i in range(len(V)):
-                    v = V.at[i, var]
-                    if not math.isfinite(v):
-                        continue
-                    same = V[(V.group == V.at[i, "group"])]
-                    if kind == "abs":
-                        pool = same.loc[(same.date <= V.at[i, "date"]), var].dropna().tolist()
-                        if len(pool) < CFG["normalisation"]["abs_min_obs"]:
+                for g, idx in V.groupby("group").groups.items():
+                    sub = V.loc[idx]
+                    vals = sub[var].to_numpy(float)
+                    dts = sub["date"].to_numpy()
+                    for d in np.unique(dts):
+                        rows = np.where((dts == d) & np.isfinite(vals))[0]
+                        if not len(rows):
                             continue
-                    else:
-                        pool = same.loc[(same.date == V.at[i, "date"]), var].dropna().tolist()
-                        if len(pool) < 3:
+                        mask = (dts <= d) if kind == "abs" else (dts == d)
+                        pool = np.sort(vals[mask & np.isfinite(vals)])
+                        need = CFG["normalisation"]["abs_min_obs"] if kind == "abs" else 3
+                        if len(pool) < need:
                             continue
-                    p = pct(pool, v)
-                    sc[i] = 100 - p if direction == "inverse" else p
+                        lo = np.searchsorted(pool, vals[rows], "left")
+                        hi = np.searchsorted(pool, vals[rows], "right")
+                        p = 100.0 * (lo + 0.5 * (hi - lo)) / len(pool)
+                        sc[np.asarray(idx)[rows]] = 100 - p if direction == "inverse" else p
                 cols.append(sc)
                 d = np.nanmax(np.abs(sc - S[f"s_{var}"].to_numpy())) if np.isfinite(sc).any() else 0.0
                 mm = int((np.isnan(sc) != S[f"s_{var}"].isna().to_numpy()).sum())
@@ -113,7 +115,7 @@ def main():
     b = pd.Series(ew).reindex(B.index)
     db = np.nanmax(np.abs(b - B.kbri_company_mean_ew))
     print(f"Disclosure basket EW mean: max|diff| = {db:.2e}")
-    ok = dg <= 1e-6 and nan_g == 0 and worst <= 1e-9 and mism == 0 and db <= 1e-9
+    ok = dg <= 1e-6 and nan_g == 0 and worst <= 1e-9 + 0 and mism == 0 and db <= 1e-9
     print("PASS" if ok else "FAIL", f"(worst score diff {worst:.2e}, missing-pattern mismatches {mism})")
     return ok
 

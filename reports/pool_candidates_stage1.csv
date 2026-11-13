@@ -1,0 +1,161 @@
+cik,ticker,name,sic,max_mcap,first_px,note,n10K,n20F,sic_desc,group_sic,foreign_new
+2488,AMD,ADVANCED MICRO DEVICES INC,3674,700802626397.285,1980-03-17,,9,0,Semiconductors & Related Devices,semis_equipment,False
+866291,ALGM,"ALLEGRO MICROSYSTEMS, INC.",3674,8697614092.610405,2020-10-29,,6,0,Semiconductors & Related Devices,semis_equipment,False
+1047127,AMKR,"AMKOR TECHNOLOGY, INC.",3674,16541084447.394276,1998-05-01,,7,0,Semiconductors & Related Devices,semis_equipment,False
+6281,ADI,ANALOG DEVICES INC,3674,178702645190.70438,1980-03-17,,7,0,Semiconductors & Related Devices,semis_equipment,False
+6951,AMAT,APPLIED MATERIALS INC /DE,3674,425569959993.75,1980-03-17,,13,0,Semiconductors & Related Devices,semis_equipment,False
+1158114,AAOI,"APPLIED OPTOELECTRONICS, INC.",3674,8804018542.533989,2013-09-26,,9,0,Semiconductors & Related Devices,semis_equipment,False
+1973239,ARM,ARM HOLDINGS PLC /UK,3674,161567038696.28906,2023-09-14,,0,3,Semiconductors & Related Devices,semis_equipment,False
+1736297,ALAB,"Astera Labs, Inc.",3674,53484816231.30333,2024-03-20,,2,0,Semiconductors & Related Devices,semis_equipment,False
+1730168,AVGO,Broadcom Inc.,3674,2121901447941.0813,2009-08-06,,8,0,Semiconductors & Related Devices,semis_equipment,False
+1807794,CRDO,Credo Technology Group Holding Ltd,3674,40798728069.52575,2022-01-27,,5,0,Semiconductors & Related Devices,semis_equipment,False
+1463101,ENPH,"Enphase Energy, Inc.",3674,30272975749.35832,2012-03-30,,14,0,Semiconductors & Related Devices,semis_equipment,False
+1274494,FSLR,"FIRST SOLAR, INC.",3674,21797023189.29224,2006-11-17,,6,0,Semiconductors & Related Devices,semis_equipment,False
+50863,INTC,INTEL CORP,3674,477053284595.4895,1980-03-17,,7,0,Semiconductors & Related Devices,semis_equipment,False
+855658,LSCC,LATTICE SEMICONDUCTOR CORP,3674,17360507645.69893,1989-11-09,,5,0,Semiconductors & Related Devices,semis_equipment,False
+1493594,MTSI,"MACOM Technology Solutions Holdings, Inc.",3674,19384580935.03395,2012-03-15,,9,0,Semiconductors & Related Devices,semis_equipment,False
+1835632,MRVL,"Marvell Technology, Inc.",3674,164269902603.1494,2000-06-30,,5,0,Semiconductors & Related Devices,semis_equipment,False
+827054,MCHP,MICROCHIP TECHNOLOGY INC,3674,46970519537.60011,1993-03-19,,8,0,Semiconductors & Related Devices,semis_equipment,False
+723125,MU,MICRON TECHNOLOGY INC,3674,1176145757525.546,1984-06-01,,10,0,Semiconductors & Related Devices,semis_equipment,False
+1280452,MPWR,"MONOLITHIC POWER SYSTEMS, INC.",3674,61367813159.91211,2004-11-19,,7,0,Semiconductors & Related Devices,semis_equipment,False
+1045810,NVDA,NVIDIA CORP,3674,1913890342407.2263,1999-01-22,,6,0,Semiconductors & Related Devices,semis_equipment,False
+1413447,NXPI,NXP Semiconductors N.V.,3674,67963849432.65784,2010-08-06,,7,7,Semiconductors & Related Devices,semis_equipment,False
+1097864,ON,ON SEMICONDUCTOR CORP,3674,33624380298.96628,2000-05-02,,10,0,Semiconductors & Related Devices,semis_equipment,False
+2058873,Q,"Qnity Electronics, Inc.",3674,27443975138.450867,2025-10-27,,1,0,Semiconductors & Related Devices,semis_equipment,False
+917273,RMBS,RAMBUS INC,3674,14352668067.904778,1997-05-14,,15,0,Semiconductors & Related Devices,semis_equipment,False
+88941,SMTC,SEMTECH CORP,3674,14556335014.41307,1980-03-17,,8,0,Semiconductors & Related Devices,semis_equipment,False
+1451809,SITM,SITIME Corp,3674,15084866831.66098,2019-11-20,,7,0,Semiconductors & Related Devices,semis_equipment,False
+4127,SWKS,"SKYWORKS SOLUTIONS, INC.",3674,26882358592.123444,1984-09-07,,12,0,Semiconductors & Related Devices,semis_equipment,False
+1419612,SEDG,"SOLAREDGE TECHNOLOGIES, INC.",3674,16612096634.80664,2015-03-26,,11,0,Semiconductors & Related Devices,semis_equipment,False
+97476,TXN,TEXAS INSTRUMENTS INC,3674,274203146306.3544,1972-06-01,,10,0,Semiconductors & Related Devices,semis_equipment,False
+912093,VIAV,VIAVI SOLUTIONS INC.,3674,8391342121.358761,1993-11-17,,9,0,Semiconductors & Related Devices,semis_equipment,False
+707549,LRCX,LAM RESEARCH CORP,3559,397189603832.51953,1984-05-04,,12,0,"Special Industry Machinery, NEC",semis_equipment,False
+97210,TER,"TERADYNE, INC",3825,52338191159.88922,1973-02-21,,12,0,Instruments For Meas & Testing of  Electricity & Elec Signals,semis_equipment,False
+1967680,VLTO,Veralto Corp,3825,24271828696.84212,2023-10-04,,3,0,Instruments For Meas & Testing of  Electricity & Elec Signals,semis_equipment,False
+820318,COHR,COHERENT CORP.,3827,62317288312.56821,1987-10-02,,9,0,Optical Instruments & Lenses,semis_equipment,False
+319201,KLAC,KLA CORP,3827,205048227407.40143,1980-10-08,,10,0,Optical Instruments & Lenses,semis_equipment,False
+1645590,HPE,Hewlett Packard Enterprise Co,3570,50595761074.369606,2015-10-19,,7,0,Computer & office Equipment,hardware_networking,False
+47217,HPQ,HP INC,3570,87517536428.31236,1970-01-02,,10,0,Computer & office Equipment,hardware_networking,False
+51143,IBM,INTERNATIONAL BUSINESS MACHINES CORP,3570,273680926871.53223,1970-01-02,,7,0,Computer & office Equipment,hardware_networking,False
+320193,AAPL,Apple Inc.,3571,4885172505454.102,1980-12-12,,12,0,Electronic Computers,hardware_networking,False
+1571996,DELL,Dell Technologies Inc.,3571,78276961669.92188,2016-08-17,,3,0,Electronic Computers,hardware_networking,False
+1375365,SMCI,"Super Micro Computer, Inc.",3571,29622850081.96411,2007-03-29,,9,0,Electronic Computers,hardware_networking,False
+1474432,P,"Everpure, Inc.",3572,27977295121.71337,2015-10-06,,10,0,Computer Storage Devices,hardware_networking,False
+1002047,NTAP,"NetApp, Inc.",3572,28051394377.667618,1995-11-21,,10,0,Computer Storage Devices,hardware_networking,False
+2023554,SNDK,Sandisk Corp,3572,177490571482.71777,2025-02-13,,2,0,Computer Storage Devices,hardware_networking,False
+1137789,STX,Seagate Technology Holdings plc,3572,190368034108.7613,2002-12-11,,8,0,Computer Storage Devices,hardware_networking,False
+106040,WDC,WESTERN DIGITAL CORP,3572,151913546482.00946,1978-10-31,,8,0,Computer Storage Devices,hardware_networking,False
+1596532,ANET,"Arista Networks, Inc.",3576,215293881371.0611,2014-06-06,,4,0,Computer Communications Equipment,hardware_networking,False
+858877,CSCO,"CISCO SYSTEMS, INC.",3576,297306955275.0,1990-02-16,,7,0,Computer Communications Equipment,hardware_networking,False
+1048695,FFIV,"F5, INC.",3576,22988531339.920574,1999-06-04,,6,0,Computer Communications Equipment,hardware_networking,False
+1262039,FTNT,"Fortinet, Inc.",3577,110042370542.17708,2009-11-18,,9,0,"Computer Peripheral Equipment, NEC",hardware_networking,False
+1032975,LOGI,LOGITECH INTERNATIONAL S.A.,3577,16559864011.692268,1997-03-27,,17,0,"Computer Peripheral Equipment, NEC",hardware_networking,False
+1327567,PANW,Palo Alto Networks Inc,3577,209379625000.0,2012-07-20,,7,0,"Computer Peripheral Equipment, NEC",hardware_networking,False
+936395,CIEN,CIENA CORP,3661,81930694652.66772,1997-02-07,,5,0,Telephone & Telegraph Apparatus,hardware_networking,False
+1408710,FN,Fabrinet,3661,20150351422.343567,2010-06-25,,17,0,Telephone & Telegraph Apparatus,hardware_networking,False
+68505,MSI,"Motorola Solutions, Inc.",3663,79629198717.5119,1970-01-02,,9,0,Radio & Tv Broadcasting & Communications Equipment,hardware_networking,False
+804328,QCOM,QUALCOMM INC/DE,3663,198081513809.2041,1991-12-13,,9,0,Radio & Tv Broadcasting & Communications Equipment,hardware_networking,False
+1511737,UI,Ubiquiti Inc.,3663,34851205728.0,2011-10-14,,15,0,Radio & Tv Broadcasting & Communications Equipment,hardware_networking,False
+866706,ESE,ESCO TECHNOLOGIES INC,3669,8166536021.5327,1990-10-01,,14,0,"Communications Equipment, NEC",hardware_networking,False
+1633978,LITE,Lumentum Holdings Inc.,3669,74600578179.93164,2015-07-23,,9,0,"Communications Equipment, NEC",hardware_networking,False
+1030894,CLS,CELESTICA INC,3672,38576489853.0,1998-06-30,,2,24,Printed Circuit Boards,hardware_networking,False
+866374,FLEX,FLEX LTD.,3672,43675492615.29307,1994-03-18,,8,0,Printed Circuit Boards,hardware_networking,False
+898293,JBL,JABIL INC,3672,39110078696.328,1993-05-03,,9,0,Printed Circuit Boards,hardware_networking,False
+897723,SANM,SANMINA CORP,3672,10921393233.974363,1993-04-14,,16,0,Printed Circuit Boards,hardware_networking,False
+1116942,TTMI,TTM TECHNOLOGIES INC,3672,12049268955.906404,2000-09-25,,9,0,Printed Circuit Boards,hardware_networking,False
+1652044,GOOG,Alphabet Inc.,7370,3837773850708.008,2004-08-19,,3,0,"Services-Computer Programming, Data Processing, Etc.",software_apps,False
+1751008,APP,AppLovin Corp,7370,230426227904.6631,2021-04-15,,5,0,"Services-Computer Programming, Data Processing, Etc.",software_apps,False
+1582961,DOCN,"DigitalOcean Holdings, Inc.",7370,12526538317.927608,2021-03-24,,5,0,"Services-Computer Programming, Data Processing, Etc.",software_apps,False
+1013237,FDS,FACTSET RESEARCH SYSTEMS INC,7370,18443179201.4375,1996-06-28,,12,0,"Services-Computer Programming, Data Processing, Etc.",software_apps,False
+1635327,FLUT,Flutter Entertainment plc,7370,16792872387.580078,2002-10-04,,3,0,"Services-Computer Programming, Data Processing, Etc.",software_apps,False
+891103,MTCH,"Match Group, Inc.",7370,9046604283.8233,1993-01-19,,8,0,"Services-Computer Programming, Data Processing, Etc.",software_apps,False
+1326801,META,"Meta Platforms, Inc.",7370,1699071729125.9766,2012-05-18,,2,0,"Services-Computer Programming, Data Processing, Etc.",software_apps,False
+1513845,NBIS,Nebius Group N.V.,7370,20732050333.445526,2024-10-21,,0,16,"Services-Computer Programming, Data Processing, Etc.",specialist_infra,False
+1800227,PPLI,People Inc,7370,21207232360.997173,1993-01-19,,6,0,"Services-Computer Programming, Data Processing, Etc.",software_apps,False
+1506293,PINS,"PINTEREST, INC.",7370,39293798509.82666,2019-04-18,,6,0,"Services-Computer Programming, Data Processing, Etc.",software_apps,False
+1564408,SNAP,Snap Inc,7370,73319627006.92749,2017-03-02,,8,0,"Services-Computer Programming, Data Processing, Etc.",software_apps,False
+1671933,TTD,"Trade Desk, Inc.",7370,124190689643.74542,2016-09-21,,9,0,"Services-Computer Programming, Data Processing, Etc.",software_apps,False
+1585521,ZM,"Zoom Communications, Inc.",7370,110924363988.38226,2019-04-18,,7,0,"Services-Computer Programming, Data Processing, Etc.",software_apps,False
+1058290,CTSH,COGNIZANT TECHNOLOGY SOLUTIONS CORP,7371,45812869956.61609,1998-06-19,,5,0,Services-Computer Programming Services,software_apps,False
+1516513,DOCS,"Doximity, Inc.",7371,11676099994.384766,2021-06-24,,5,0,Services-Computer Programming Services,software_apps,False
+1352010,EPAM,"EPAM Systems, Inc.",7371,24238221442.641724,2012-02-08,,12,0,Services-Computer Programming Services,software_apps,False
+1014473,VRSN,VERISIGN INC/CA,7371,25267060333.251957,1998-01-30,,9,0,Services-Computer Programming Services,software_apps,False
+1713683,ZS,"Zscaler, Inc.",7371,48604140333.62814,2018-03-16,,9,0,Services-Computer Programming Services,software_apps,False
+796343,ADBE,ADOBE INC.,7372,255199188964.84372,1986-08-13,,8,0,Services-Prepackaged Software,software_apps,False
+1433195,APPF,APPFOLIO INC,7372,9074855084.899902,2015-06-26,,11,0,Services-Prepackaged Software,software_apps,False
+1441683,APPN,APPIAN CORP,7372,11192405827.97928,2017-05-25,,9,0,Services-Prepackaged Software,software_apps,False
+1477720,ASAN,"Asana, Inc.",7372,9257524399.25003,2020-09-30,,6,0,Services-Prepackaged Software,software_apps,False
+1650372,TEAM,Atlassian Corp,7372,53166320871.30737,2015-12-09,,2,0,Services-Prepackaged Software,software_apps,False
+769397,ADSK,"Autodesk, Inc.",7372,68724574112.60605,1985-06-28,,11,0,Services-Prepackaged Software,software_apps,False
+1031308,BSY,BENTLEY SYSTEMS INC,7372,17350039671.412056,2020-09-23,,6,0,Services-Prepackaged Software,software_apps,False
+1786352,BILL,"BILL Holdings, Inc.",7372,16167381857.027864,2019-12-12,,7,0,Services-Prepackaged Software,software_apps,False
+1512673,XYZ,"Block, Inc.",7372,104938825585.70862,2015-11-19,,5,0,Services-Prepackaged Software,software_apps,False
+813672,CDNS,CADENCE DESIGN SYSTEMS INC,7372,102845939046.99709,1987-06-10,,7,0,Services-Prepackaged Software,software_apps,False
+1477333,NET,"Cloudflare, Inc.",7372,68691198023.40698,2019-09-13,,5,0,Services-Prepackaged Software,software_apps,False
+1769628,CRWV,"CoreWeave, Inc.",7372,31221960266.11328,2025-03-28,,1,0,Services-Prepackaged Software,specialist_infra,False
+1535527,CRWD,"CrowdStrike Holdings, Inc.",7372,170812994220.0,2019-06-12,,6,0,Services-Prepackaged Software,software_apps,False
+1561550,DDOG,"Datadog, Inc.",7372,55044539468.62793,2019-09-19,,3,0,Services-Prepackaged Software,software_apps,False
+1261333,DOCU,"DOCUSIGN, INC.",7372,48748860327.054245,2018-04-27,,7,0,Services-Prepackaged Software,software_apps,False
+1467623,DBX,"DROPBOX, INC.",7372,10188287841.796877,2018-03-23,,7,0,Services-Prepackaged Software,software_apps,False
+1562088,DUOL,"Duolingo, Inc.",7372,15271557747.46704,2021-07-28,,5,0,Services-Prepackaged Software,software_apps,False
+1773383,DT,"Dynatrace, Inc.",7372,17635635618.670807,2019-08-01,,7,0,Services-Prepackaged Software,software_apps,False
+1707753,ESTC,Elastic N.V.,7372,14397754251.137283,2018-10-05,,8,0,Services-Prepackaged Software,software_apps,False
+1579878,FIG,"Figma, Inc.",7372,12595333919.998169,2025-07-31,,1,0,Services-Prepackaged Software,software_apps,False
+849399,GEN,Gen Digital Inc.,7372,17222835367.044373,1989-06-23,,12,0,Services-Prepackaged Software,software_apps,False
+1653482,GTLB,Gitlab Inc.,7372,11683801143.035889,2021-10-14,,5,0,Services-Prepackaged Software,software_apps,False
+1528396,GWRE,"Guidewire Software, Inc.",7372,18038488770.02724,2012-01-25,,8,0,Services-Prepackaged Software,software_apps,False
+1404655,HUBS,HUBSPOT INC,7372,40218887498.80206,2014-10-09,,8,0,Services-Prepackaged Software,software_apps,False
+896878,INTU,INTUIT INC.,7372,158303116037.5,1993-03-12,,6,0,Services-Prepackaged Software,software_apps,False
+1800667,FROG,JFrog Ltd,7372,9691702115.79464,2020-09-16,,6,0,Services-Prepackaged Software,software_apps,False
+1835830,KVYO,"Klaviyo, Inc.",7372,10983731151.27752,2023-09-20,,3,0,Services-Prepackaged Software,software_apps,False
+1056696,MANH,MANHATTAN ASSOCIATES INC,7372,13777287517.545927,1998-04-23,,15,0,Services-Prepackaged Software,software_apps,False
+789019,MSFT,MICROSOFT CORP,7372,3349998410120.5034,1986-03-13,,6,0,Services-Prepackaged Software,software_apps,False
+1441816,MDB,"MongoDB, Inc.",7372,31301276373.302124,2017-10-19,,7,0,Services-Prepackaged Software,software_apps,False
+1618732,NTNX,"Nutanix, Inc.",7372,17490355571.819153,2016-09-30,,10,0,Services-Prepackaged Software,software_apps,False
+1660134,OKTA,"Okta, Inc.",7372,32949181362.304688,2017-04-07,,9,0,Services-Prepackaged Software,software_apps,False
+1341439,ORCL,ORACLE CORP,7372,625135630660.8582,1986-03-12,,11,0,Services-Prepackaged Software,software_apps,False
+1321655,PLTR,Palantir Technologies Inc.,7372,455963766750.0,2020-09-30,,6,0,Services-Prepackaged Software,software_apps,False
+1590955,PAYC,"Paycom Software, Inc.",7372,26062841362.56894,2014-04-15,,11,0,Services-Prepackaged Software,software_apps,False
+1591698,PCTY,Paylocity Holding Corp,7372,11523138860.846924,2014-03-19,,7,0,Services-Prepackaged Software,software_apps,False
+857005,PTC,PTC INC.,7372,22842878898.977966,1989-12-08,,10,0,Services-Prepackaged Software,software_apps,False
+1315098,RBLX,Roblox Corp,7372,55879259518.18848,2021-03-10,,4,0,Services-Prepackaged Software,software_apps,False
+1943896,RBRK,"Rubrik, Inc.",7372,11305120862.045288,2024-04-25,,2,0,Services-Prepackaged Software,software_apps,False
+2030781,SAIL,"SailPoint, Inc.",7372,11367305253.854065,2025-02-13,,2,0,Services-Prepackaged Software,software_apps,False
+1108524,CRM,"Salesforce, Inc.",7372,315819579345.7031,2004-06-23,,3,0,Services-Prepackaged Software,software_apps,False
+1373715,NOW,"ServiceNow, Inc.",7372,233645196228.0273,2012-06-29,,4,0,Services-Prepackaged Software,software_apps,False
+1594805,SHOP,SHOPIFY INC.,7372,210058327050.3105,2015-05-20,,2,1,Services-Prepackaged Software,software_apps,False
+1640147,SNOW,Snowflake Inc.,7372,123115490583.80128,2020-09-16,,4,0,Services-Prepackaged Software,software_apps,False
+1402436,SSNC,SS&C Technologies Holdings Inc,7372,15710151266.089785,2010-03-31,,16,0,Services-Prepackaged Software,software_apps,False
+883241,SNPS,SYNOPSYS INC,7372,100434586339.34145,1992-02-26,,11,0,Services-Prepackaged Software,software_apps,False
+946581,TTWO,TAKE TWO INTERACTIVE SOFTWARE INC,7372,45484648161.45703,1997-04-15,,12,0,Services-Prepackaged Software,software_apps,False
+816761,TDC,TERADATA CORP /DE/,7372,11052228607.177734,2007-10-01,,12,0,Services-Prepackaged Software,software_apps,False
+1447669,TWLO,TWILIO INC,7372,29206191959.03425,2016-06-23,,7,0,Services-Prepackaged Software,software_apps,False
+860731,TYL,TYLER TECHNOLOGIES INC,7372,11771785477.526,1980-03-17,,10,0,Services-Prepackaged Software,software_apps,False
+1734722,PATH,"UiPath, Inc.",7372,16607450695.037842,2021-04-21,,5,0,Services-Prepackaged Software,software_apps,False
+1810806,U,Unity Software Inc.,7372,13986686634.542725,2020-09-18,,6,0,Services-Prepackaged Software,software_apps,False
+1393052,VEEV,VEEVA SYSTEMS INC,7372,44347018443.0,2013-10-16,,7,0,Services-Prepackaged Software,software_apps,False
+1794515,GTM,ZoomInfo Technologies Inc.,7372,22487433408.184723,2020-06-04,,5,0,Services-Prepackaged Software,software_apps,False
+1828108,AUR,"Aurora Innovation, Inc.",7373,10193400308.609009,2021-05-10,,5,0,Services-Computer Integrated Systems Design,software_apps,False
+16058,CACI,CACI INTERNATIONAL INC /DE/,7373,14042047620.139526,1980-03-17,,9,0,Services-Computer Integrated Systems Design,software_apps,False
+1609711,GDDY,GoDaddy Inc.,7373,25753632859.247192,2015-03-31,,9,0,Services-Computer Integrated Systems Design,software_apps,False
+1824920,IONQ,"IonQ, Inc.",7373,12188263937.65549,2021-01-04,,6,0,Services-Computer Integrated Systems Design,software_apps,False
+779152,JKHY,JACK HENRY & ASSOCIATES INC,7373,13358901534.527466,1985-11-20,,19,0,Services-Computer Integrated Systems Design,software_apps,False
+1867072,KD,"Kyndryl Holdings, Inc.",7373,8677197042.414093,2021-10-22,,5,0,Services-Computer Integrated Systems Design,software_apps,False
+1336920,LDOS,"Leidos Holdings, Inc.",7373,24611183582.767944,2006-10-17,,6,0,Services-Computer Integrated Systems Design,software_apps,False
+1002638,OTEX,OPEN TEXT CORP,7373,12997997306.459732,1996-01-24,,25,0,Services-Computer Integrated Systems Design,software_apps,False
+275880,PSN,PARSONS CORP,7373,8132055112.395233,2019-05-08,,7,0,Services-Computer Integrated Systems Design,software_apps,False
+1642896,IOT,Samsara Inc.,7373,28650348160.0,2021-12-15,,4,0,Services-Computer Integrated Systems Design,software_apps,False
+1144879,APLD,Applied Digital Corp.,7374,8264556778.565062,2022-04-13,,5,0,Services-Computer Processing & Data Preparation,software_apps,False
+8670,ADP,AUTOMATIC DATA PROCESSING INC,7374,122122296050.60716,1980-03-17,,9,0,Services-Computer Processing & Data Preparation,software_apps,False
+1764046,CLVT,CLARIVATE PLC,7374,18682672223.68929,2018-10-29,,7,1,Services-Computer Processing & Data Preparation,software_apps,False
+1688568,DXC,DXC Technology Co,7374,28171587378.14139,1981-12-31,,9,0,Services-Computer Processing & Data Preparation,software_apps,False
+1809519,GDRX,"GoodRx Holdings, Inc.",7374,13398179205.116272,2020-09-23,,6,0,Services-Computer Processing & Data Preparation,software_apps,False
+1013857,PEGA,PEGASYSTEMS INC,7374,11324470821.615189,1996-07-19,,7,0,Services-Computer Processing & Data Preparation,software_apps,False
+1713445,RDDT,"Reddit, Inc.",7374,46458559916.00464,2024-03-21,,2,0,Services-Computer Processing & Data Preparation,software_apps,False
+1384905,RNG,"RingCentral, Inc.",7374,33608575588.25684,2013-09-27,,7,0,Services-Computer Processing & Data Preparation,software_apps,False
+1650164,TOST,"Toast, Inc.",7374,21554568981.17065,2021-09-22,,4,0,Services-Computer Processing & Data Preparation,software_apps,False
+1442145,VRSK,"Verisk Analytics, Inc.",7374,26989415102.098083,2009-10-07,,11,0,Services-Computer Processing & Data Preparation,software_apps,False
+1327811,WDAY,"Workday, Inc.",7374,34522000000.0,2012-10-12,,7,0,Services-Computer Processing & Data Preparation,software_apps,False
+1297996,DLR,"DIGITAL REALTY TRUST, INC.",6798,59146528053.529785,2004-10-29,,9,0,Real Estate Investment Trusts,specialist_infra,False
+1101239,EQIX,EQUINIX INC,6798,101895736439.6864,2000-08-11,,6,0,Real Estate Investment Trusts,specialist_infra,False
+1018724,AMZN,AMAZON COM INC,5961,2634737192239.4453,1997-05-15,,6,0,Retail-Catalog & Mail-Order Houses,hyperscalers,False

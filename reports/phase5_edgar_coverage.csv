@@ -1,27 +1,138 @@
 ticker,cik,name,sic,sicDescription,taxonomies,n_facts,first_filed,n_10K,n_10Q,n_20F,n_6K,fiscal_year_end,group
-NVDA,1045810,NVIDIA CORP,3674,Semiconductors & Related Devices,"['dei', 'ecd', 'ffd', 'invest', 'srt', 'us-gaap']",27281,2009-08-20,25,83,0,0,0131,semis_equipment
-AMD,2488,ADVANCED MICRO DEVICES INC,3674,Semiconductors & Related Devices,"['dei', 'ecd', 'ffd', 'invest', 'srt', 'us-gaap']",24244,2010-08-04,29,99,0,0,1226,semis_equipment
-AVGO,1730168,Broadcom Inc.,3674,Semiconductors & Related Devices,"['dei', 'ffd', 'srt', 'us-gaap']",15453,2018-06-14,8,26,0,0,1101,semis_equipment
-MRVL,1835632,"Marvell Technology, Inc.",3674,Semiconductors & Related Devices,"['dei', 'ecd', 'ffd', 'srt', 'us-gaap']",8423,2021-06-09,5,17,0,0,0130,semis_equipment
-MU,723125,MICRON TECHNOLOGY INC,3674,Semiconductors & Related Devices,"['dei', 'ffd', 'us-gaap']",27533,2010-01-12,31,98,0,0,0902,semis_equipment
-ARM,1973239,ARM HOLDINGS PLC /UK,3674,Semiconductors & Related Devices,"['dei', 'ffd', 'us-gaap']",4745,2023-11-09,0,0,3,36,0331,semis_equipment
-AMAT,6951,APPLIED MATERIALS INC /DE,3674,Semiconductors & Related Devices,"['dei', 'srt', 'us-gaap']",30259,2009-09-01,29,99,0,0,1026,semis_equipment
-LRCX,707549,LAM RESEARCH CORP,3559,"Special Industry Machinery, NEC","['dei', 'ecd', 'us-gaap']",27384,2010-11-03,27,94,0,0,0627,semis_equipment
-KLAC,319201,KLA CORP,3827,Optical Instruments & Lenses,"['dei', 'ecd', 'ffd', 'us-gaap']",33323,2010-11-24,33,99,0,0,0630,semis_equipment
-TSM,1046179,TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD,3674,Semiconductors & Related Devices,"['dei', 'ifrs-full', 'srt']",5981,2018-04-19,0,0,26,1337,1231,semis_equipment
-ASML,937966,ASML HOLDING NV,3559,"Special Industry Machinery, NEC","['dei', 'us-gaap']",11381,2010-02-26,0,0,25,362,1231,semis_equipment
-MSFT,789019,MICROSOFT CORP,7372,Services-Prepackaged Software,"['dei', 'ecd', 'ffd', 'us-gaap']",33058,2009-10-23,33,99,0,0,0630,hyperscalers
-GOOGL,1652044,Alphabet Inc.,7370,"Services-Computer Programming, Data Processing, Etc.","['dei', 'ecd', 'ffd', 'us-gaap']",21504,2015-10-29,11,34,0,0,1231,hyperscalers
-AMZN,1018724,AMAZON COM INC,5961,Retail-Catalog & Mail-Order Houses,"['dei', 'ecd', 'ffd', 'us-gaap']",30289,2009-07-24,26,89,0,0,1231,hyperscalers
-META,1326801,"Meta Platforms, Inc.",7370,"Services-Computer Programming, Data Processing, Etc.","['dei', 'ecd', 'ffd', 'srt', 'us-gaap']",18499,2012-07-31,14,44,0,0,1231,hyperscalers
-ORCL,1341439,ORACLE CORP,7372,Services-Prepackaged Software,"['dei', 'ecd', 'ffd', 'us-gaap']",26367,2009-09-21,21,62,0,0,0531,hyperscalers
-CRWV,1769628,"CoreWeave, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'ffd', 'us-gaap']",3179,2025-05-15,1,6,0,0,1231,specialist_infra
-NBIS,1513845,Nebius Group N.V.,7370,"Services-Computer Programming, Data Processing, Etc.",['us-gaap'],9561,2012-03-02,0,0,16,250,,specialist_infra
-VRT,1674101,Vertiv Holdings Co,3679,"Electronic Components, NEC","['dei', 'ecd', 'us-gaap']",12022,2018-08-07,8,26,0,0,1231,specialist_infra
-SMCI,1375365,"Super Micro Computer, Inc.",3571,Electronic Computers,"['dei', 'ffd', 'srt', 'us-gaap']",24688,2011-11-07,19,56,0,0,0630,specialist_infra
-EQIX,1101239,EQUINIX INC,6798,Real Estate Investment Trusts,"['dei', 'ffd', 'srt', 'us-gaap']",32834,2010-08-04,25,80,0,0,1231,specialist_infra
-DLR,1297996,"DIGITAL REALTY TRUST, INC.",6798,Real Estate Investment Trusts,"['dei', 'ecd', 'ffd', 'invest', 'srt', 'us-gaap']",24669,2010-08-12,22,67,0,0,1231,specialist_infra
-PLTR,1321655,Palantir Technologies Inc.,7372,Services-Prepackaged Software,"['dei', 'ecd', 'srt', 'us-gaap']",8134,2020-11-13,6,19,0,0,1231,software_apps
-NOW,1373715,"ServiceNow, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'ffd', 'srt', 'us-gaap']",22063,2012-08-10,14,44,0,0,1231,software_apps
-CRM,1108524,"Salesforce, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'ffd', 'us-gaap']",31394,2009-08-25,22,67,0,0,0131,software_apps
-SNOW,1640147,Snowflake Inc.,7372,Services-Prepackaged Software,"['dei', 'ecd', 'srt', 'us-gaap']",10484,2020-12-03,6,18,0,0,0131,software_apps
+ALGM,866291,"ALLEGRO MICROSYSTEMS, INC.",3674,Semiconductors & Related Devices,"['dei', 'ecd', 'us-gaap']",9268,2020-11-20,6,19,0,0,0331,semis_equipment
+AMKR,1047127,"AMKOR TECHNOLOGY, INC.",3674,Semiconductors & Related Devices,"['dei', 'us-gaap']",26469,2010-08-05,24,87,0,0,1231,semis_equipment
+ADI,6281,ANALOG DEVICES INC,3674,Semiconductors & Related Devices,"['dei', 'ffd', 'invest', 'srt', 'us-gaap']",29377,2009-08-18,31,99,0,0,1031,semis_equipment
+AAOI,1158114,"APPLIED OPTOELECTRONICS, INC.",3674,Semiconductors & Related Devices,"['dei', 'ecd', 'ffd', 'us-gaap']",22336,2013-11-14,13,40,0,0,1231,semis_equipment
+ALAB,1736297,"Astera Labs, Inc.",3674,Semiconductors & Related Devices,"['dei', 'ecd', 'ffd', 'us-gaap']",3316,2024-05-08,2,9,0,0,1231,semis_equipment
+CRDO,1807794,Credo Technology Group Holding Ltd,3674,Semiconductors & Related Devices,"['dei', 'ecd', 'ffd', 'us-gaap']",5778,2022-03-10,5,14,0,0,0429,semis_equipment
+ENPH,1463101,"Enphase Energy, Inc.",3674,Semiconductors & Related Devices,"['dei', 'ffd', 'us-gaap']",21383,2012-05-14,14,45,0,0,1231,semis_equipment
+FSLR,1274494,"FIRST SOLAR, INC.",3674,Semiconductors & Related Devices,"['dei', 'us-gaap']",32212,2009-08-03,20,60,0,0,1231,semis_equipment
+INTC,50863,INTEL CORP,3674,Semiconductors & Related Devices,"['dei', 'ffd', 'invest', 'us-gaap']",28815,2009-08-03,33,99,0,0,1226,semis_equipment
+LSCC,855658,LATTICE SEMICONDUCTOR CORP,3674,Semiconductors & Related Devices,"['dei', 'ffd', 'us-gaap']",20445,2011-08-05,28,96,0,0,0102,semis_equipment
+MTSI,1493594,"MACOM Technology Solutions Holdings, Inc.",3674,Semiconductors & Related Devices,"['dei', 'us-gaap']",23570,2012-05-10,15,44,0,0,1003,semis_equipment
+MCHP,827054,MICROCHIP TECHNOLOGY INC,3674,Semiconductors & Related Devices,"['dei', 'ecd', 'ffd', 'srt', 'us-gaap']",29085,2009-08-10,28,92,0,0,0331,semis_equipment
+MPWR,1280452,"MONOLITHIC POWER SYSTEMS, INC.",3674,Semiconductors & Related Devices,"['dei', 'ecd', 'srt', 'us-gaap']",24125,2011-08-09,22,66,0,0,1231,semis_equipment
+NXPI,1413447,NXP Semiconductors N.V.,3674,Semiconductors & Related Devices,"['dei', 'ecd', 'invest', 'srt', 'us-gaap']",18103,2012-04-12,7,22,9,172,1231,semis_equipment
+ON,1097864,ON SEMICONDUCTOR CORP,3674,Semiconductors & Related Devices,"['dei', 'ffd', 'invest', 'us-gaap']",31279,2010-08-05,25,81,0,0,1231,semis_equipment
+Q,2058873,"Qnity Electronics, Inc.",3674,Semiconductors & Related Devices,"['dei', 'ecd', 'us-gaap']",1991,2025-11-18,1,4,0,0,1231,semis_equipment
+RMBS,917273,RAMBUS INC,3674,Semiconductors & Related Devices,"['dei', 'us-gaap']",23106,2010-07-30,26,89,0,0,1231,semis_equipment
+SMTC,88941,SEMTECH CORP,3674,Semiconductors & Related Devices,"['dei', 'ecd', 'ffd', 'invest', 'us-gaap']",25825,2010-09-10,27,95,0,0,0131,semis_equipment
+SITM,1451809,SITIME Corp,3674,Semiconductors & Related Devices,"['dei', 'ecd', 'ffd', 'us-gaap']",8696,2020-03-02,7,21,0,0,1231,semis_equipment
+SWKS,4127,"SKYWORKS SOLUTIONS, INC.",3674,Semiconductors & Related Devices,"['dei', 'ffd', 'us-gaap']",22142,2010-05-11,28,95,0,0,1002,semis_equipment
+SEDG,1419612,"SOLAREDGE TECHNOLOGIES, INC.",3674,Semiconductors & Related Devices,"['dei', 'ecd', 'invest', 'us-gaap']",18849,2015-06-01,11,35,0,0,1231,semis_equipment
+TXN,97476,TEXAS INSTRUMENTS INC,3674,Semiconductors & Related Devices,"['dei', 'ffd', 'invest', 'us-gaap']",24804,2009-07-29,28,100,0,0,1231,semis_equipment
+VIAV,912093,VIAVI SOLUTIONS INC.,3674,Semiconductors & Related Devices,"['dei', 'ecd', 'ffd', 'us-gaap']",31934,2010-11-12,31,91,0,0,0627,semis_equipment
+TER,97210,"TERADYNE, INC",3825,Instruments For Meas & Testing of  Electricity & Elec Signals,"['dei', 'invest', 'srt', 'us-gaap']",34746,2010-08-12,32,99,0,0,1231,semis_equipment
+VLTO,1967680,Veralto Corp,3825,Instruments For Meas & Testing of  Electricity & Elec Signals,"['dei', 'ffd', 'us-gaap']",4075,2023-10-26,3,10,0,0,1231,semis_equipment
+COHR,820318,COHERENT CORP.,3827,Optical Instruments & Lenses,"['dei', 'ecd', 'invest', 'srt', 'us-gaap']",27833,2010-11-08,31,96,0,0,0630,semis_equipment
+HPE,1645590,Hewlett Packard Enterprise Co,3570,Computer & office Equipment,"['dei', 'invest', 'srt', 'us-gaap']",23212,2015-12-17,11,33,0,0,1031,hardware_networking
+HPQ,47217,HP INC,3570,Computer & office Equipment,"['dei', 'ffd', 'invest', 'us-gaap']",33144,2009-09-08,32,99,0,0,1031,hardware_networking
+IBM,51143,INTERNATIONAL BUSINESS MACHINES CORP,3570,Computer & office Equipment,"['dei', 'ffd', 'us-gaap']",38031,2009-07-28,29,99,0,0,1231,hardware_networking
+AAPL,320193,Apple Inc.,3571,Electronic Computers,"['dei', 'ffd', 'us-gaap']",25604,2009-07-22,31,98,0,0,0926,hardware_networking
+DELL,1571996,Dell Technologies Inc.,3571,Electronic Computers,"['dei', 'ecd', 'us-gaap']",23650,2016-06-10,10,32,0,0,0129,hardware_networking
+P,1474432,"Everpure, Inc.",3572,Computer Storage Devices,"['dei', 'ecd', 'us-gaap']",17349,2015-12-11,11,33,0,0,0131,hardware_networking
+NTAP,1002047,"NetApp, Inc.",3572,Computer Storage Devices,"['dei', 'ecd', 'ffd', 'srt', 'us-gaap']",28701,2010-09-13,30,91,0,0,0424,hardware_networking
+SNDK,2023554,Sandisk Corp,3572,Computer Storage Devices,"['dei', 'ecd', 'srt', 'us-gaap']",3421,2025-03-07,2,6,0,0,0628,hardware_networking
+STX,1137789,Seagate Technology Holdings plc,3572,Computer Storage Devices,"['dei', 'ecd', 'invest', 'us-gaap']",25053,2010-11-03,24,72,0,0,0627,hardware_networking
+WDC,106040,WESTERN DIGITAL CORP,3572,Computer Storage Devices,"['dei', 'ecd', 'invest', 'srt', 'us-gaap']",28484,2009-10-29,31,99,0,0,0703,hardware_networking
+ANET,1596532,"Arista Networks, Inc.",3576,Computer Communications Equipment,"['dei', 'ecd', 'srt', 'us-gaap']",20563,2014-08-08,12,38,0,0,1231,hardware_networking
+CSCO,858877,"CISCO SYSTEMS, INC.",3576,Computer Communications Equipment,"['dei', 'ecd', 'ffd', 'invest', 'us-gaap']",41576,2009-11-18,31,95,0,0,0731,hardware_networking
+FFIV,1048695,"F5, INC.",3576,Computer Communications Equipment,"['dei', 'us-gaap']",23936,2010-08-06,27,82,0,0,0930,hardware_networking
+FTNT,1262039,"Fortinet, Inc.",3577,"Computer Peripheral Equipment, NEC","['dei', 'ecd', 'invest', 'us-gaap']",23666,2011-08-04,17,51,0,0,1231,hardware_networking
+LOGI,1032975,LOGITECH INTERNATIONAL S.A.,3577,"Computer Peripheral Equipment, NEC","['dei', 'us-gaap']",26409,2010-08-25,19,56,11,97,0331,hardware_networking
+PANW,1327567,Palo Alto Networks Inc,3577,"Computer Peripheral Equipment, NEC","['dei', 'ecd', 'ffd', 'invest', 'srt', 'us-gaap']",21101,2012-12-10,15,42,0,0,0731,hardware_networking
+CIEN,936395,CIENA CORP,3661,Telephone & Telegraph Apparatus,"['dei', 'srt', 'us-gaap']",25606,2010-09-08,29,90,0,0,1031,hardware_networking
+FN,1408710,Fabrinet,3661,Telephone & Telegraph Apparatus,"['dei', 'ecd', 'invest', 'srt', 'us-gaap']",23246,2011-11-09,17,49,0,0,0627,hardware_networking
+MSI,68505,"Motorola Solutions, Inc.",3663,Radio & Tv Broadcasting & Communications Equipment,"['dei', 'ffd', 'srt', 'us-gaap']",36136,2009-08-26,32,99,0,0,1231,hardware_networking
+QCOM,804328,QUALCOMM INC/DE,3663,Radio & Tv Broadcasting & Communications Equipment,"['dei', 'ffd', 'invest', 'srt', 'us-gaap']",29376,2009-07-22,29,92,0,0,0927,hardware_networking
+UI,1511737,Ubiquiti Inc.,3663,Radio & Tv Broadcasting & Communications Equipment,"['dei', 'ecd', 'us-gaap']",20672,2011-11-14,15,46,0,0,0630,hardware_networking
+ESE,866706,ESCO TECHNOLOGIES INC,3669,"Communications Equipment, NEC","['dei', 'srt', 'us-gaap']",22030,2010-08-06,27,92,0,0,0930,hardware_networking
+LITE,1633978,Lumentum Holdings Inc.,3669,"Communications Equipment, NEC","['dei', 'ecd', 'srt', 'us-gaap']",21848,2015-09-25,12,34,0,0,0627,hardware_networking
+CLS,1030894,CELESTICA INC,3672,Printed Circuit Boards,"['dei', 'ecd', 'ffd', 'ifrs-full', 'invest', 'us-gaap']",5793,2018-03-12,2,6,24,374,1231,hardware_networking
+FLEX,866374,FLEX LTD.,3672,Printed Circuit Boards,"['dei', 'ecd', 'invest', 'srt', 'us-gaap']",22378,2009-08-04,29,92,0,0,0331,hardware_networking
+JBL,898293,JABIL INC,3672,Printed Circuit Boards,"['dei', 'ffd', 'invest', 'us-gaap']",26200,2011-01-07,30,91,0,0,0831,hardware_networking
+SANM,897723,SANMINA CORP,3672,Printed Circuit Boards,"['dei', 'ffd', 'us-gaap']",20166,2011-02-08,26,92,0,0,1003,hardware_networking
+TTMI,1116942,TTM TECHNOLOGIES INC,3672,Printed Circuit Boards,"['dei', 'srt', 'us-gaap']",24167,2011-08-08,26,79,0,0,1228,hardware_networking
+APP,1751008,AppLovin Corp,7370,"Services-Computer Programming, Data Processing, Etc.","['dei', 'ecd', 'ffd', 'us-gaap']",7627,2021-05-14,5,18,0,0,1231,software_apps
+DOCN,1582961,"DigitalOcean Holdings, Inc.",7370,"Services-Computer Programming, Data Processing, Etc.","['dei', 'ecd', 'ffd', 'us-gaap']",9880,2021-05-07,5,18,0,0,1231,software_apps
+FDS,1013237,FACTSET RESEARCH SYSTEMS INC,7370,"Services-Computer Programming, Data Processing, Etc.","['dei', 'ecd', 'srt', 'us-gaap']",26426,2011-01-10,31,91,0,0,0831,software_apps
+FLUT,1635327,Flutter Entertainment plc,7370,"Services-Computer Programming, Data Processing, Etc.","['dei', 'ecd', 'ifrs-full', 'us-gaap']",5910,2018-03-14,3,9,0,141,1231,software_apps
+MTCH,891103,"Match Group, Inc.",7370,"Services-Computer Programming, Data Processing, Etc.","['dei', 'ecd', 'ffd', 'srt', 'us-gaap']",30457,2010-07-29,26,93,0,0,1231,software_apps
+PPLI,1800227,People Inc,7370,"Services-Computer Programming, Data Processing, Etc.","['dei', 'ecd', 'srt', 'us-gaap']",14608,2020-06-03,6,21,0,0,1231,software_apps
+PINS,1506293,"PINTEREST, INC.",7370,"Services-Computer Programming, Data Processing, Etc.","['dei', 'ecd', 'srt', 'us-gaap']",8231,2019-05-17,7,24,0,0,1231,software_apps
+SNAP,1564408,Snap Inc,7370,"Services-Computer Programming, Data Processing, Etc.","['dei', 'ffd', 'us-gaap']",11889,2017-05-11,9,30,0,0,1231,software_apps
+TTD,1671933,"Trade Desk, Inc.",7370,"Services-Computer Programming, Data Processing, Etc.","['dei', 'ecd', 'ffd', 'us-gaap']",11116,2016-11-10,10,31,0,0,1231,software_apps
+ZM,1585521,"Zoom Communications, Inc.",7370,"Services-Computer Programming, Data Processing, Etc.","['dei', 'ecd', 'us-gaap']",11076,2019-06-07,7,23,0,0,0131,software_apps
+CTSH,1058290,COGNIZANT TECHNOLOGY SOLUTIONS CORP,7371,Services-Computer Programming Services,"['dei', 'ecd', 'us-gaap']",25502,2009-08-07,28,86,0,0,1231,software_apps
+DOCS,1516513,"Doximity, Inc.",7371,Services-Computer Programming Services,"['dei', 'ecd', 'srt', 'us-gaap']",9530,2021-08-12,5,17,0,0,0331,software_apps
+EPAM,1352010,"EPAM Systems, Inc.",7371,Services-Computer Programming Services,"['dei', 'ecd', 'ffd', 'srt', 'us-gaap']",19665,2012-05-09,15,45,0,0,1231,software_apps
+VRSN,1014473,VERISIGN INC/CA,7371,Services-Computer Programming Services,"['dei', 'ecd', 'ffd', 'invest', 'srt', 'us-gaap']",22586,2009-08-06,26,87,0,0,1231,software_apps
+ZS,1713683,"Zscaler, Inc.",7371,Services-Computer Programming Services,"['dei', 'ffd', 'us-gaap']",13382,2018-06-07,9,25,0,0,0731,software_apps
+ADBE,796343,ADOBE INC.,7372,Services-Prepackaged Software,"['dei', 'ffd', 'invest', 'srt', 'us-gaap']",29088,2009-06-26,32,96,0,0,1127,software_apps
+APPF,1433195,APPFOLIO INC,7372,Services-Prepackaged Software,"['dei', 'ecd', 'srt', 'us-gaap']",15672,2015-08-06,11,35,0,0,1231,software_apps
+APPN,1441683,APPIAN CORP,7372,Services-Prepackaged Software,"['ecd', 'srt', 'us-gaap']",13908,2017-08-03,9,29,0,0,1231,software_apps
+ASAN,1477720,"Asana, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'srt', 'us-gaap']",8981,2020-12-10,6,18,0,0,0131,software_apps
+TEAM,1650372,Atlassian Corp,7372,Services-Prepackaged Software,"['dei', 'ecd', 'ifrs-full', 'srt', 'us-gaap']",8882,2018-08-30,4,13,7,81,0630,software_apps
+ADSK,769397,"Autodesk, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'ffd', 'invest', 'us-gaap']",27804,2009-06-03,29,98,0,0,0131,software_apps
+BSY,1031308,BENTLEY SYSTEMS INC,7372,Services-Prepackaged Software,"['dei', 'ecd', 'us-gaap']",11898,2020-11-10,6,19,0,0,1231,software_apps
+BILL,1786352,"BILL Holdings, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'ffd', 'srt', 'us-gaap']",11001,2020-02-11,7,21,0,0,0630,software_apps
+XYZ,1512673,"Block, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'srt', 'us-gaap']",18466,2016-05-06,11,33,0,0,1231,software_apps
+CDNS,813672,CADENCE DESIGN SYSTEMS INC,7372,Services-Prepackaged Software,"['dei', 'ffd', 'srt', 'us-gaap']",24772,2010-08-04,31,99,0,0,1231,software_apps
+NET,1477333,"Cloudflare, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'us-gaap']",11219,2019-11-12,7,22,0,0,1231,software_apps
+CRWD,1535527,"CrowdStrike Holdings, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'ffd', 'us-gaap']",12765,2019-07-19,7,23,0,0,0131,software_apps
+DDOG,1561550,"Datadog, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'us-gaap']",10619,2019-11-13,7,22,0,0,1231,software_apps
+DOCU,1261333,"DOCUSIGN, INC.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'srt', 'us-gaap']",12590,2018-06-08,8,26,0,0,0131,software_apps
+DBX,1467623,"DROPBOX, INC.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'srt', 'us-gaap']",13716,2018-05-11,8,27,0,0,1231,software_apps
+DUOL,1562088,"Duolingo, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'srt', 'us-gaap']",6443,2021-08-12,5,17,0,0,1231,software_apps
+DT,1773383,"Dynatrace, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'srt', 'us-gaap']",10356,2019-09-05,7,23,0,0,0331,software_apps
+ESTC,1707753,Elastic N.V.,7372,Services-Prepackaged Software,"['dei', 'ecd', 'srt', 'us-gaap']",12203,2018-12-12,8,24,0,0,0430,software_apps
+FIG,1579878,"Figma, Inc.",7372,Services-Prepackaged Software,"['dei', 'us-gaap']",2312,2025-09-03,1,5,0,0,1231,software_apps
+GEN,849399,Gen Digital Inc.,7372,Services-Prepackaged Software,"['dei', 'ecd', 'us-gaap']",27802,2009-08-05,31,96,0,0,0328,software_apps
+GTLB,1653482,Gitlab Inc.,7372,Services-Prepackaged Software,"['dei', 'ecd', 'us-gaap']",8470,2021-12-07,5,15,0,0,0131,software_apps
+GWRE,1528396,"Guidewire Software, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'invest', 'srt', 'us-gaap']",24472,2012-03-14,15,44,0,0,0731,software_apps
+HUBS,1404655,HUBSPOT INC,7372,Services-Prepackaged Software,"['dei', 'ecd', 'ffd', 'us-gaap']",17096,2014-11-13,12,37,0,0,1231,software_apps
+INTU,896878,INTUIT INC.,7372,Services-Prepackaged Software,"['dei', 'ffd', 'srt', 'us-gaap']",29737,2009-12-04,28,91,0,0,0731,software_apps
+FROG,1800667,JFrog Ltd,7372,Services-Prepackaged Software,"['dei', 'ecd', 'srt', 'us-gaap']",9261,2020-11-05,6,19,0,0,1231,software_apps
+KVYO,1835830,"Klaviyo, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'us-gaap']",4635,2023-11-07,3,10,0,0,1231,software_apps
+MANH,1056696,MANHATTAN ASSOCIATES INC,7372,Services-Prepackaged Software,"['dei', 'ffd', 'us-gaap']",17008,2011-07-29,25,87,0,0,1231,software_apps
+MDB,1441816,"MongoDB, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'srt', 'us-gaap']",13554,2017-12-15,9,27,0,0,0131,software_apps
+NTNX,1618732,"Nutanix, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'us-gaap']",15054,2016-12-08,10,30,0,0,0731,software_apps
+OKTA,1660134,"Okta, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'srt', 'us-gaap']",13099,2017-06-08,9,29,0,0,0131,software_apps
+PAYC,1590955,"Paycom Software, Inc.",7372,Services-Prepackaged Software,"['dei', 'us-gaap']",15939,2014-06-12,12,39,0,0,1231,software_apps
+PCTY,1591698,Paylocity Holding Corp,7372,Services-Prepackaged Software,"['dei', 'ecd', 'us-gaap']",16629,2014-05-14,13,38,0,0,0630,software_apps
+PTC,857005,PTC INC.,7372,Services-Prepackaged Software,"['dei', 'ffd', 'invest', 'us-gaap']",25760,2010-08-12,26,95,0,0,0930,software_apps
+RBLX,1315098,Roblox Corp,7372,Services-Prepackaged Software,"['dei', 'ecd', 'srt', 'us-gaap']",8714,2021-05-13,5,18,0,0,1231,software_apps
+RBRK,1943896,"Rubrik, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'us-gaap']",3434,2024-06-13,2,8,0,0,0131,software_apps
+SAIL,2030781,"SailPoint, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'us-gaap']",2136,2025-06-12,2,5,0,0,0131,software_apps
+SHOP,1594805,SHOPIFY INC.,7372,Services-Prepackaged Software,"['dei', 'ffd', 'srt', 'us-gaap']",5931,2016-02-17,2,6,1,177,1231,software_apps
+SSNC,1402436,SS&C Technologies Holdings Inc,7372,Services-Prepackaged Software,"['dei', 'ecd', 'ffd', 'us-gaap']",23171,2011-08-12,16,51,0,0,1231,software_apps
+SNPS,883241,SYNOPSYS INC,7372,Services-Prepackaged Software,"['dei', 'invest', 'srt', 'us-gaap']",28476,2010-09-08,29,92,0,0,1031,software_apps
+TTWO,946581,TAKE TWO INTERACTIVE SOFTWARE INC,7372,Services-Prepackaged Software,"['dei', 'ecd', 'invest', 'us-gaap']",22394,2010-09-03,28,85,0,0,0331,software_apps
+TDC,816761,TERADATA CORP /DE/,7372,Services-Prepackaged Software,"['dei', 'ffd', 'us-gaap']",23505,2010-08-05,19,58,0,0,1231,software_apps
+TWLO,1447669,TWILIO INC,7372,Services-Prepackaged Software,"['dei', 'ecd', 'srt', 'us-gaap']",15855,2016-08-09,10,32,0,0,1231,software_apps
+TYL,860731,TYLER TECHNOLOGIES INC,7372,Services-Prepackaged Software,"['dei', 'srt', 'us-gaap']",20807,2011-07-28,24,93,0,0,1231,software_apps
+PATH,1734722,"UiPath, Inc.",7372,Services-Prepackaged Software,"['dei', 'ecd', 'us-gaap']",9401,2021-06-09,5,17,0,0,0131,software_apps
+U,1810806,Unity Software Inc.,7372,Services-Prepackaged Software,"['dei', 'us-gaap']",8758,2020-11-13,6,19,0,0,1231,software_apps
+VEEV,1393052,VEEVA SYSTEMS INC,7372,Services-Prepackaged Software,"['dei', 'ecd', 'srt', 'us-gaap']",19099,2013-12-13,13,39,0,0,0131,software_apps
+GTM,1794515,ZoomInfo Technologies Inc.,7372,Services-Prepackaged Software,"['dei', 'ffd', 'srt', 'us-gaap']",10730,2020-08-11,6,20,0,0,1231,software_apps
+AUR,1828108,"Aurora Innovation, Inc.",7373,Services-Computer Integrated Systems Design,"['dei', 'ffd', 'us-gaap']",6024,2021-05-17,5,18,0,0,1231,software_apps
+CACI,16058,CACI INTERNATIONAL INC /DE/,7373,Services-Computer Integrated Systems Design,"['dei', 'ecd', 'us-gaap']",21704,2010-11-04,26,97,0,0,1231,software_apps
+GDDY,1609711,GoDaddy Inc.,7373,Services-Computer Integrated Systems Design,"['dei', 'ecd', 'ffd', 'srt', 'us-gaap']",15761,2015-08-06,11,36,0,0,1231,software_apps
+IONQ,1824920,"IonQ, Inc.",7373,Services-Computer Integrated Systems Design,"['dei', 'ecd', 'ffd', 'us-gaap']",7631,2020-12-18,6,19,0,0,1231,software_apps
+JKHY,779152,JACK HENRY & ASSOCIATES INC,7373,Services-Computer Integrated Systems Design,"['dei', 'ecd', 'us-gaap']",22892,2010-11-05,32,95,0,0,0630,software_apps
+KD,1867072,"Kyndryl Holdings, Inc.",7373,Services-Computer Integrated Systems Design,"['dei', 'ecd', 'ffd', 'us-gaap']",9145,2021-11-22,5,15,0,0,0331,software_apps
+LDOS,1336920,"Leidos Holdings, Inc.",7373,Services-Computer Integrated Systems Design,"['dei', 'ffd', 'us-gaap']",26919,2010-09-03,20,64,0,0,0101,software_apps
+OTEX,1002638,OPEN TEXT CORP,7373,Services-Computer Integrated Systems Design,"['dei', 'us-gaap']",35030,2009-05-07,25,75,0,0,0630,software_apps
+PSN,275880,PARSONS CORP,7373,Services-Computer Integrated Systems Design,"['dei', 'srt', 'us-gaap']",13510,2019-06-18,7,24,0,0,1231,software_apps
+IOT,1642896,Samsara Inc.,7373,Services-Computer Integrated Systems Design,"['dei', 'ecd', 'us-gaap']",6333,2022-06-08,5,14,0,0,0130,software_apps
+APLD,1144879,Applied Digital Corp.,7374,Services-Computer Processing & Data Preparation,"['dei', 'ecd', 'ffd', 'us-gaap']",6230,2022-05-13,5,17,0,0,0531,software_apps
+ADP,8670,AUTOMATIC DATA PROCESSING INC,7374,Services-Computer Processing & Data Preparation,"['dei', 'ecd', 'ffd', 'us-gaap']",33014,2009-11-06,31,99,0,0,0630,software_apps
+CLVT,1764046,CLARIVATE PLC,7374,Services-Computer Processing & Data Preparation,"['dei', 'srt', 'us-gaap']",17618,2019-06-17,7,21,1,16,1231,software_apps
+DXC,1688568,DXC Technology Co,7374,Services-Computer Processing & Data Preparation,"['dei', 'ecd', 'ffd', 'invest', 'srt', 'us-gaap']",20967,2017-03-31,9,30,0,0,0331,software_apps
+GDRX,1809519,"GoodRx Holdings, Inc.",7374,Services-Computer Processing & Data Preparation,"['dei', 'ecd', 'us-gaap']",6776,2020-11-12,6,18,0,0,1231,software_apps
+PEGA,1013857,PEGASYSTEMS INC,7374,Services-Computer Processing & Data Preparation,"['dei', 'ecd', 'srt', 'us-gaap']",22954,2011-08-09,28,92,0,0,1231,software_apps
+RDDT,1713445,"Reddit, Inc.",7374,Services-Computer Processing & Data Preparation,"['dei', 'ecd', 'srt', 'us-gaap']",3637,2024-05-08,2,9,0,0,1231,software_apps
+RNG,1384905,"RingCentral, Inc.",7374,Services-Computer Processing & Data Preparation,"['dei', 'us-gaap']",18286,2013-11-13,13,40,0,0,1231,software_apps
+TOST,1650164,"Toast, Inc.",7374,Services-Computer Processing & Data Preparation,"['dei', 'ecd', 'ffd', 'us-gaap']",8302,2021-11-09,5,16,0,0,1231,software_apps
+VRSK,1442145,"Verisk Analytics, Inc.",7374,Services-Computer Processing & Data Preparation,"['dei', 'ecd', 'us-gaap']",31639,2011-05-03,17,52,0,0,1231,software_apps
+WDAY,1327811,"Workday, Inc.",7374,Services-Computer Processing & Data Preparation,"['dei', 'ecd', 'ffd', 'us-gaap']",22144,2012-12-07,14,42,0,0,0131,software_apps

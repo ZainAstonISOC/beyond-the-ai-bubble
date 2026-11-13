@@ -90,8 +90,10 @@ def build_variables() -> pd.DataFrame:
             fr = f[f["usable"] <= M]
             if not len(fr):
                 continue
-            x = fr.iloc[-1]
+            x = fr.iloc[-1].copy()
             fx = r.fx_to_usd
+            if np.isfinite(x["gross_profit_ttm"]) and np.isfinite(x["revenue_ttm"]) and x["gross_profit_ttm"] > x["revenue_ttm"] * 1.0001:
+                x["revenue_ttm"] = x["gross_profit_ttm"] = np.nan      # identity break: reject both
             # point-in-time best 3-year average FCF margin since 2010
             hist = fr[fr["period_end"] >= "2010-01-01"][["period_end", "fcf_margin"]].dropna()
             m3 = [hist[(hist.period_end > e - pd.DateOffset(years=3)) & (hist.period_end <= e)]["fcf_margin"].mean()
@@ -163,28 +165,35 @@ def build_variables() -> pd.DataFrame:
 
 
 # ------------------------------------------------------------------ step 3: normalisation
+def _direct_pct(pool, v):
+    """Direct comparison (rows x pool broadcast): share below plus half of ties."""
+    return 100 * ((pool[None, :] < v[:, None]).sum(1) + 0.5 * (pool[None, :] == v[:, None]).sum(1)) / len(pool)
+
+
 def pooled_percentile(V: pd.DataFrame, var: str, min_obs: int) -> pd.Series:
     out = pd.Series(np.nan, index=V.index)
     for g, d in V.groupby("group"):
-        d = d.sort_values("date")
         vals, dates = d[var].to_numpy(float), d["date"].to_numpy()
-        for i, (v, dt) in enumerate(zip(vals, dates)):
-            if not np.isfinite(v):
+        for dt in np.unique(dates):
+            rows = (dates == dt) & np.isfinite(vals)
+            if not rows.any():
                 continue
             pool = vals[(dates <= dt) & np.isfinite(vals)]
             if len(pool) < min_obs:
                 continue
-            out.loc[d.index[i]] = 100 * ((pool < v).sum() + 0.5 * (pool == v).sum()) / len(pool)
+            out.loc[d.index[rows]] = _direct_pct(pool, vals[rows])
     return out
 
 
 def cross_percentile(V: pd.DataFrame, var: str, min_n: int = 3) -> pd.Series:
-    def f(s):
-        s2 = s.dropna()
-        if len(s2) < min_n:
-            return pd.Series(np.nan, index=s.index)
-        return s.apply(lambda v: 100 * ((s2 < v).sum() + 0.5 * (s2 == v).sum()) / len(s2) if np.isfinite(v) else np.nan)
-    return V.groupby(["date", "group"], group_keys=False)[var].apply(f)
+    out = pd.Series(np.nan, index=V.index)
+    for (dt, g), d in V.groupby(["date", "group"]):
+        vals = d[var].to_numpy(float)
+        ok = np.isfinite(vals)
+        if ok.sum() < min_n:
+            continue
+        out.loc[d.index[ok]] = _direct_pct(vals[ok], vals[ok])
+    return out
 
 
 def score(V: pd.DataFrame, kind: str = "abs") -> pd.DataFrame:

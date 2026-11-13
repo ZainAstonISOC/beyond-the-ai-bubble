@@ -50,11 +50,13 @@ def scan(t: str) -> dict:
 
 
 def main():
-    cmap = {v["ticker"].upper(): int(v["cik_str"]) for v in
-            json.loads((ROOT / "data" / "raw" / "edgar" / "company_tickers.json").read_text()).values()}
+    from src.kbri.candidates import pool, ciks
+    cmap = ciks()
     rows = []
-    for g, ts in CFG["universe"]["candidates"].items():
+    for g, ts in pool().groupby("group")["ticker"]:
         for t in ts:
+            if not (STAGED / f"filings_{t}.parquet").exists():
+                continue
             fl = pd.read_parquet(STAGED / f"filings_{t}.parquet")
             fl = fl[fl["form"].isin(["10-K", "20-F"]) & (fl["reportDate"] >= "2015-01-01")].sort_values("filingDate")
             for _, r in fl.iterrows():

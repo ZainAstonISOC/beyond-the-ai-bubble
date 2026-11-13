@@ -104,3 +104,19 @@ ifrs_tags:
   debt_current: [CurrentPortionOfLongtermBorrowings, ShorttermBorrowings]
   lease_liab: [LeaseLiabilities]
   diluted_shares: [AdjustedWeightedAverageShares, WeightedAverageShares]
+
+# Rule-based candidate pool (added 13 Nov 2026 before any hypothesis test; replaces the hand-picked
+# candidate list, which was chosen with hindsight and breaches methodology s.12.3).
+pool_rules:
+  sic_groups:
+    semis_equipment: [3674, 3559, 3825, 3827]
+    hardware_networking: [3570, 3571, 3572, 3575, 3576, 3577, 3578, 3579, 3661, 3663, 3669, 3672]
+    software_apps: [7370, 7371, 7372, 7373, 7374]
+  reit_sic: 6798
+  reit_name_pattern: "(?i)(data ?cent|digital realty|equinix|coresite|cyrusone|qts realty|switch)"
+  explicit_includes: {AMZN: "hyperscalers"}      # SIC 5961; AWS has been the largest public cloud since before 2010
+  hyperscaler_rule: "SIC 7370-7374 (or explicit include) with TTM capex >= $10bn at any point since 2010"
+  specialist_rule: "data-centre REITs, plus prior specialist candidates (GPU cloud / data-centre equipment)"
+  exchanges: [NYSE, Nasdaq]
+  size_screen: "market cap >= $10bn (>= $2bn specialist) at any month-end since 2010"
+  limitation: "companies delisted before 2026 have no free price history and cannot be scored"
