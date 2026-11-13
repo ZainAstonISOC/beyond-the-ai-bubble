@@ -1,0 +1,26 @@
+metric,entity,period,value,unit,boundary,status,source_url,note
+dc_electricity,US,2014,58,TWh,US data centres,reported,https://newscenter.lbl.gov/2025/01/15/berkeley-lab-report-evaluates-increase-in-electricity-demand-from-data-centers/,LBNL 2024 Report on U.S. Data Center Energy Use
+dc_electricity,US,2023,176,TWh,US data centres,reported,https://newscenter.lbl.gov/2025/01/15/berkeley-lab-report-evaluates-increase-in-electricity-demand-from-data-centers/,4.4% of US electricity
+dc_electricity_low,US,2028,325,TWh,US data centres,forecast,https://newscenter.lbl.gov/2025/01/15/berkeley-lab-report-evaluates-increase-in-electricity-demand-from-data-centers/,LBNL low scenario
+dc_electricity_high,US,2028,580,TWh,US data centres,forecast,https://newscenter.lbl.gov/2025/01/15/berkeley-lab-report-evaluates-increase-in-electricity-demand-from-data-centers/,LBNL high scenario
+dc_electricity,World,2024,415,TWh,global data centres,reported,https://www.iea.org/reports/energy-and-ai/executive-summary,IEA Energy and AI; 1.5% of world electricity
+dc_electricity_base,World,2030,945,TWh,global data centres,forecast,https://www.iea.org/reports/energy-and-ai/executive-summary,IEA Base Case
+dc_electricity_range_low,World,2035,700,TWh,global data centres,forecast,https://www.iea.org/reports/energy-and-ai/executive-summary,IEA range across cases (Headwinds)
+dc_electricity_range_high,World,2035,1700,TWh,global data centres,forecast,https://www.iea.org/reports/energy-and-ai/executive-summary,IEA range across cases (Lift-Off)
+grid_intensity,US,2024,384,gCO2/kWh,US power sector average,reported,https://ember-energy.org/latest-insights/us-electricity-2025-special-report/insight-4-rising-demand-pushes-up-emissions-slight/,Ember
+grid_intensity,US,2023,367,gCO2/kWh,US utility-scale generation average,reported,https://www.eia.gov/tools/FAQS/faq.php?id=74&t=3,EIA: about 0.81 lb CO2 per kWh (converted at 453.6 g/lb)
+scope2_location,MSFT,FY2024,9955368,tCO2e,company operations,reported,https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf,FY ends 30 Jun 2024; assured
+scope2_market,MSFT,FY2024,259090,tCO2e,company operations,reported,https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf,FY ends 30 Jun 2024
+scope2_location,MSFT,FY2020,4328916,tCO2e,company operations,reported,https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf,baseline year
+scope2_market,MSFT,FY2020,456119,tCO2e,company operations,reported,https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf,baseline year
+electricity,MSFT,FY2025,37000000,MWh,company operations,reported,https://trellis.net/article/microsoft-adjusts-climate-agenda-as-emissions-leap/,up 24% on FY2024 (secondary source)
+scope2_location,GOOGL,2025,15148700,tCO2e,Alphabet operations,reported,https://sustainability.google/files/6b09a7cbecbf228f4d30ad089301578eb599425e/alphabet-fy2025-environmental-indicators-assurance-letter.pdf,assured
+scope2_market,GOOGL,2025,2815000,tCO2e,Alphabet operations,reported,https://sustainability.google/files/6b09a7cbecbf228f4d30ad089301578eb599425e/alphabet-fy2025-environmental-indicators-assurance-letter.pdf,assured
+energy,GOOGL,2025,44046500,MWh,Alphabet total energy consumption (GRI 302-1),reported,https://sustainability.google/files/6b09a7cbecbf228f4d30ad089301578eb599425e/alphabet-fy2025-environmental-indicators-assurance-letter.pdf,includes fuels; electricity is the large majority
+scope2_location,META,2024,5967348,tCO2e,company operations,reported,https://tracenable.com/company/meta-platforms/ghg-emissions,from Meta 2025 Environmental Data Index (secondary compilation)
+scope2_market,META,2024,1358,tCO2e,company operations,reported,https://sustainability.atmeta.com/climate/,Meta
+electricity,META,2024,18423634,MWh,company operations,reported,https://sustainability.atmeta.com/asset/2025-environmental-data-index,Meta 2025 Environmental Data Index
+scope2_location,AMZN,2025,21820000,tCO2e,company operations,reported,https://sustainability.aboutamazon.com/2025-ghg-assurance-scope-1-2.pdf,assured
+scope2_market,AMZN,2025,3740000,tCO2e,company operations,reported,https://sustainability.aboutamazon.com/2025-ghg-assurance-scope-1-2.pdf,assured
+scope2_location,AMZN,2023,15670000,tCO2e,company operations,reported,https://sustainability.aboutamazon.com/2023-ghg-verification-scope-1-2.pdf,verified
+scope2_market,AMZN,2023,2790000,tCO2e,company operations,reported,https://sustainability.aboutamazon.com/2023-ghg-verification-scope-1-2.pdf,verified

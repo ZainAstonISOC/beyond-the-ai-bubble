@@ -43,13 +43,37 @@ def fx_to_usd(ticker: str, dates: pd.Series) -> np.ndarray:
     return 1 / r if f["fx_quote"] == "per_usd" else r
 
 
+ALT_DEBT_TAGS = ["SeniorNotes", "ConvertibleNotesPayable", "ConvertibleNotesPayableCurrent", "ConvertibleDebtNoncurrent",
+                 "ConvertibleDebtCurrent", "SecuredDebt", "UnsecuredDebt", "NotesPayable", "LongTermNotesPayable"]
+_FACTS = {}
+
+
+def alt_debt(ticker, period_end, filed) -> float:
+    """Point-in-time sum of alternative debt tags at the period end (identical values counted once)."""
+    if ticker not in _FACTS:
+        f = pd.read_parquet(STAGED / "edgar" / f"facts_{ticker}.parquet")
+        _FACTS[ticker] = f[f["concept"].isin(ALT_DEBT_TAGS) & f["start"].isna() & (f["unit"] == "USD")]
+    f = _FACTS[ticker]
+    g = f[(f["filed"] <= filed) & ((f["end"] - period_end).abs() <= pd.Timedelta(days=7))]
+    if not len(g):
+        return np.nan
+    vals = g.sort_values("filed").groupby("concept")["val"].last()
+    return float(pd.Series(vals.values).drop_duplicates().sum())
+
+
 def debt(row) -> float:
     if not np.isnan(row["debt_total"]):
         d = row["debt_total"]
         d += 0 if np.isnan(row["short_term_borrowings"]) else row["short_term_borrowings"]
         return d
     parts = [row[c] for c in ("debt_noncurrent", "debt_current", "short_term_borrowings")]
-    return np.nansum(parts) if not all(np.isnan(parts)) else 0.0
+    if not all(np.isnan(parts)):
+        return np.nansum(parts)
+    alt = alt_debt(row["ticker"], row["period_end"], row["filed"])
+    if np.isfinite(alt):
+        return alt
+    # no debt tag at all: debt-free only if interest expense is immaterial, otherwise unknown (never a silent zero)
+    return 0.0 if not (row["interest_expense_ttm"] > 5e6) else np.nan
 
 
 def build(month_ends: pd.DatetimeIndex | None = None) -> pd.DataFrame:
