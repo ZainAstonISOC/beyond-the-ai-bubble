@@ -1,21 +1,21 @@
 # Phase 4: KMSI v1.1 validation
 
-Config d588bf2753f9. Published sample 2001-10-10 to 2026-11-12 (6251 days). AI momentum uses the ^SOX analogue (provisional).
+Config d588bf2753f9. Published sample 2001-10-10 to 2026-11-12 (6314 days). AI momentum uses the ^SOX analogue (provisional).
 
 | Check | Result | Criterion | Outcome |
 | --- | --- | --- | --- |
-| Convergent validity | 20-day KMSI vs NFCI r = -0.50 (n=1289); vs equity put/call r = -0.40 (n=3253); vs AAII bull-bear r = 0.47 (n=1288) | Expected sign on all three; abs(r) with NFCI >= 0.4 | Pass |
-| Discriminant validity | R squared of KMSI on 21-day S&P 500 return and VIX percentile = 0.578 (n=6251) | R squared < 0.80 | Pass |
+| Convergent validity | 20-day KMSI vs NFCI r = -0.48 (n=1306); vs equity put/call r = -0.40 (n=3253); vs AAII bull-bear r = 0.46 (n=1305) | Expected sign on all three; abs(r) with NFCI >= 0.4 | Pass |
+| Discriminant validity | R squared of KMSI on 21-day S&P 500 return and VIX percentile = 0.585 (n=6314) | R squared < 0.80 | Pass |
 | Effective dimension | Effective number of signals = 4.06 of 8; first principal component explains 43% (complete cases 2011-09-16 to 2026-11-12) | Reported, no pass/fail. Below 2 = describe KMSI as mainly one factor |  |
 | Ablation | Correlation with full KMSI when each is removed: momentum 0.991; breadth 0.986; volatility 0.979; options 0.995; credit 0.991; safe_haven 0.992; positioning 0.991; ai_momentum 0.987 | Flag any > 0.98 as redundant | Redundant: momentum, breadth, options, credit, safe_haven, positioning, ai_momentum |
-| Weight sensitivity | Regime agreement with proposed weights: equal 92.9%; risk_heavy 84.2%; behaviour_heavy 81.0% | Agreement >= 80% for every scheme | Pass |
-| Window sensitivity | Regime agreement with 1,260-day window: 504 72.3%; 2520 82.1%; expanding 78.4% | Agreement >= 80% for every window | Fail |
+| Weight sensitivity | Regime agreement with proposed weights: equal 93.1%; risk_heavy 84.4%; behaviour_heavy 81.0% | Agreement >= 80% for every scheme | Pass |
+| Window sensitivity | Regime agreement with 1,260-day window: 504 72.1%; 2520 82.2%; expanding 78.3% | Agreement >= 80% for every window | Fail |
 | Transform sensitivity | Correlation of percentile KMSI with robust z-score KMSI = 0.997 | r >= 0.9 | Pass |
 | Episode readings | Dot-com peak (24 Mar 2000): nan; Lehman aftermath (10 Oct 2008): 13.1; Market low (20 Nov 2008): 12.0; COVID crash (16 Mar 2020): 5.4; COVID low (23 Mar 2020): 8.1; 2022 low (16 Jun 2022): 18.0; 2022 low (12 Oct 2022): 20.7; Tariff shock (8 Apr 2025): 18.5; 5 Nov 2026 sell-off: 34.7; Latest (12 Nov 2026): 50.9 | Reported as-is, never used for tuning |  |
-| Look-ahead audit | 3 passed in 2.14s | Zero violations | Pass |
-| Independent recalculation | PASS: 10 series, 6251 published days, worst difference 0.00e+00 | Match to 1e-9 | Pass |
+| Look-ahead audit | 3 passed in 2.30s | Zero violations | Pass |
+| Independent recalculation | PASS: 10 series, 6314 published days, worst difference 0.00e+00 | Match to 1e-9 | Pass |
 
-Benchmarks: correlation with inverted VIX percentile 0.73; with S&P 500 drawdown from peak 0.21.
+Benchmarks: correlation with inverted VIX percentile 0.73; with S&P 500 drawdown from peak 0.24.
 
 Component correlation matrix (complete cases):
 

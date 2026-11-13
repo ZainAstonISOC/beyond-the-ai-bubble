@@ -119,7 +119,7 @@ def sub_indicators(cal: pd.DatetimeIndex, cfg: dict) -> pd.DataFrame:
     y = a("dgs10")
     synth = (y.shift(1) / 100 / 252) - p["synthetic_bond_duration"] * (y - y.shift(1)) / 100
     mix = 0.5 * ief.pct_change(fill_method=None) + 0.5 * gold.pct_change(fill_method=None)
-    haven_r = mix.where(cal >= staged("px_ief").index.min(), synth)
+    haven_r = mix.where(cal > staged("px_ief").index.min(), synth)   # IEF first day has no return: synthetic covers it
     cum = lambda r: np.exp(np.log1p(r).rolling(R, min_periods=R).sum()) - 1
     out["equity_vs_haven_ret63"] = cum(eq_r) - cum(haven_r)
 

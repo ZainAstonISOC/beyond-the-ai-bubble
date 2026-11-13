@@ -132,7 +132,7 @@ def main():
     synth = lag(y, 1) / 100 / 252 - P["synthetic_bond_duration"] * (y - lag(y, 1)) / 100
     mix = 0.5 * pchg(A("px_ief")) + 0.5 * pchg(A("px_gc_f"))
     ief_start = load("px_ief")[0].min()
-    hav = np.where(cal >= ief_start, mix, synth)
+    hav = np.where(cal > ief_start, mix, synth)
     raw["equity_vs_haven_ret63"] = cumret(eq, R) - cumret(hav, R)
     raw["cftc_es_net_pct_oi"] = pit("cftc_es_net_pct_oi", cal, carry_days=CFG["coverage"]["weekly_carry_calendar_days"])
     raw["ai_rel_ret63"] = ret(A("px_idx_sox"), R) - raw["spx_ret63"]
