@@ -1,0 +1,299 @@
+{
+ "note": "Exploratory, not registered, run after the registered tests. Returns are price returns from month-end closes; regressors are within-month standardised ranks; dependent variable winsorised 1/99 within month; Newey-West lags 11 (12-month, overlapping) and 3 (1-month).",
+ "firm_months": 11642,
+ "firms": 158,
+ "fama_macbeth_12m": {
+  "gap_only": {
+   "months": 187,
+   "avg_firms": 54.898395721925134,
+   "gap_fwd": {
+    "coef": -0.0156,
+    "t": -1.4
+   }
+  },
+  "gap_controls": {
+   "months": 178,
+   "avg_firms": 56.23033707865169,
+   "gap_fwd": {
+    "coef": -0.0317,
+    "t": -2.64
+   },
+   "log_mcap": {
+    "coef": 0.0016,
+    "t": 0.13
+   },
+   "mom": {
+    "coef": 0.0227,
+    "t": 1.66
+   },
+   "beta": {
+    "coef": 0.0676,
+    "t": 3.64
+   },
+   "ev_sales": {
+    "coef": -0.0095,
+    "t": -0.39
+   }
+  },
+  "split_gstar_consensus": {
+   "months": 187,
+   "avg_firms": 54.898395721925134,
+   "g_star": {
+    "coef": -0.0154,
+    "t": -0.88
+   },
+   "cg_fwd": {
+    "coef": 0.049,
+    "t": 2.31
+   }
+  },
+  "split_controls": {
+   "months": 178,
+   "avg_firms": 56.23033707865169,
+   "g_star": {
+    "coef": -0.0384,
+    "t": -2.37
+   },
+   "cg_fwd": {
+    "coef": 0.0592,
+    "t": 2.72
+   },
+   "log_mcap": {
+    "coef": -0.002,
+    "t": -0.16
+   },
+   "mom": {
+    "coef": 0.0229,
+    "t": 1.38
+   },
+   "beta": {
+    "coef": 0.0603,
+    "t": 3.5
+   },
+   "ev_sales": {
+    "coef": -0.0257,
+    "t": -1.14
+   }
+  },
+  "gap_plus_consensus_controls": {
+   "months": 178,
+   "avg_firms": 56.23033707865169,
+   "gap_fwd": {
+    "coef": -0.0136,
+    "t": -1.33
+   },
+   "cg_fwd": {
+    "coef": 0.0398,
+    "t": 1.82
+   },
+   "log_mcap": {
+    "coef": 0.0016,
+    "t": 0.13
+   },
+   "mom": {
+    "coef": 0.0187,
+    "t": 1.24
+   },
+   "beta": {
+    "coef": 0.0549,
+    "t": 3.42
+   },
+   "ev_sales": {
+    "coef": -0.0341,
+    "t": -1.39
+   }
+  },
+  "gap_plus_ltg_controls": {
+   "months": 178,
+   "avg_firms": 46.29213483146067,
+   "gap_fwd": {
+    "coef": -0.0236,
+    "t": -2.71
+   },
+   "ltg": {
+    "coef": 0.0085,
+    "t": 0.51
+   },
+   "log_mcap": {
+    "coef": 0.0024,
+    "t": 0.22
+   },
+   "mom": {
+    "coef": 0.0245,
+    "t": 1.78
+   },
+   "beta": {
+    "coef": 0.0527,
+    "t": 4.2
+   },
+   "ev_sales": {
+    "coef": -0.0025,
+    "t": -0.14
+   }
+  }
+ },
+ "fama_macbeth_1m": {
+  "gap_only": {
+   "months": 198,
+   "avg_firms": 58.13636363636363,
+   "gap_fwd": {
+    "coef": -0.0011,
+    "t": -1.07
+   }
+  },
+  "gap_controls": {
+   "months": 189,
+   "avg_firms": 59.48148148148148,
+   "gap_fwd": {
+    "coef": -0.0024,
+    "t": -2.21
+   },
+   "log_mcap": {
+    "coef": 0.0002,
+    "t": 0.16
+   },
+   "mom": {
+    "coef": 0.0038,
+    "t": 2.05
+   },
+   "beta": {
+    "coef": 0.0032,
+    "t": 2.4
+   },
+   "ev_sales": {
+    "coef": 0.0006,
+    "t": 0.33
+   }
+  },
+  "split_controls": {
+   "months": 189,
+   "avg_firms": 59.48148148148148,
+   "g_star": {
+    "coef": -0.0021,
+    "t": -1.39
+   },
+   "cg_fwd": {
+    "coef": 0.0041,
+    "t": 2.25
+   },
+   "log_mcap": {
+    "coef": 0.0001,
+    "t": 0.09
+   },
+   "mom": {
+    "coef": 0.0034,
+    "t": 1.81
+   },
+   "beta": {
+    "coef": 0.0026,
+    "t": 1.95
+   },
+   "ev_sales": {
+    "coef": -0.0009,
+    "t": -0.56
+   }
+  }
+ },
+ "quintiles_1m": {
+  "months": 198,
+  "mean_monthly_return_by_quintile": {
+   "Q1": 0.0219,
+   "Q2": 0.0121,
+   "Q3": 0.0132,
+   "Q4": 0.0129,
+   "Q5": 0.0183
+  },
+  "low_minus_high_monthly": 0.0036,
+  "low_minus_high_t": 1.08,
+  "low_minus_high_annualised": 0.0439,
+  "low_minus_high_sharpe_annual": 0.28,
+  "alpha_vs_basket_ew_monthly": 0.0037,
+  "alpha_t": 1.11,
+  "beta_vs_basket_ew": -0.0,
+  "low_minus_high_2010_2018": {
+   "monthly": 0.0041,
+   "t": 1.12,
+   "months": 105
+  },
+  "low_minus_high_2019_2026": {
+   "monthly": 0.003,
+   "t": 0.54,
+   "months": 93
+  }
+ },
+ "h4_with_gap": {
+  "test_months": 94,
+  "event_rate_test": 0.415,
+  "note": "Same expanding-window design and 183-day label gap as registered H4; months where the LSEG gap exists.",
+  "a_price": {
+   "AUC": 0.502,
+   "AUC_95ci_block_bootstrap": [
+    0.336,
+    0.642
+   ]
+  },
+  "b_kmsi": {
+   "AUC": 0.434,
+   "AUC_95ci_block_bootstrap": [
+    0.261,
+    0.579
+   ]
+  },
+  "c_kmsi_kbri": {
+   "AUC": 0.366,
+   "AUC_95ci_block_bootstrap": [
+    0.223,
+    0.496
+   ]
+  },
+  "d_price_gsadf": {
+   "AUC": 0.531,
+   "AUC_95ci_block_bootstrap": [
+    0.348,
+    0.694
+   ]
+  },
+  "e_price_gap": {
+   "AUC": 0.513,
+   "AUC_95ci_block_bootstrap": [
+    0.33,
+    0.666
+   ]
+  },
+  "f_price_gsadf_gap": {
+   "AUC": 0.525,
+   "AUC_95ci_block_bootstrap": [
+    0.348,
+    0.652
+   ]
+  },
+  "gain_e_price_gap_vs_a_price": {
+   "AUC_gain": 0.011,
+   "boot_p_no_gain": 0.502
+  },
+  "gain_f_price_gsadf_gap_vs_d_price_gsadf": {
+   "AUC_gain": -0.005,
+   "boot_p_no_gain": 0.632
+  },
+  "gain_e_price_gap_vs_c_kmsi_kbri": {
+   "AUC_gain": 0.146,
+   "boot_p_no_gain": 0.049
+  },
+  "univariate_auc": {
+   "train_2012_2018": {
+    "gap": 0.617,
+    "gsadf": 0.606,
+    "kbri": 0.692,
+    "kmsi": 0.142
+   },
+   "test_2019_2026": {
+    "gap": 0.524,
+    "gsadf": 0.622,
+    "kbri": 0.289,
+    "kmsi": 0.45
+   }
+  },
+  "corr_gap_gsadf": 0.325,
+  "corr_gap_kbri": 0.458
+ }
+}

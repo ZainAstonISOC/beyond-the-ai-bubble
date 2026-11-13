@@ -11,13 +11,34 @@ Consensus forward growth is FY2 over FY1 minus one, which needs no currency conv
 ## Results
 
 1. **Level.** Over the whole sample the median g* (7.3%) sits below consensus one-year-forward revenue growth (10.8%) and consensus long-term growth (14.4%). Prices implied less ten-year growth than analysts expected for the next year in 68% of firm-months.
-2. **The crossover.** The basket median g* was below consensus forward growth in every month from 2010 to 2022. It first rose above it in June 2023 and stayed above it in every month of 2024, 92% of months in 2025 and 60% of months in 2026 to October. Since mid-2023, share prices in the AI value chain have implied ten years of revenue growth faster than analysts expect for the coming year.
+2. **The crossover.** The basket median g* was below consensus forward growth in every month from 2010 to 2022. It drew level in June 2023, rose above it in September 2023, and was above it in every month of 2024, 11 of 12 months in 2025 and 6 of 10 months in 2026 to October (January to March 2026 below). For most of the time since mid-2023, share prices in the AI value chain have implied ten years of revenue growth faster than analysts expect for the coming year.
 3. **Forecasting realised growth.** Consensus is the better forecast of realised next-twelve-month revenue growth: median absolute error 6.1 points against 10.1 for g*, and a mean monthly rank correlation of 0.65 against 0.54.
 4. **Returns.** The gap between g* and consensus forward growth predicts lower 12-month returns across firms: mean monthly rank IC -0.061 (Newey-West t = -2.17 with 11 lags, p = 0.03). The sign is the same in 2012 to 2018 (-0.087, t = -1.84) and 2019 to 2025 (-0.047, t = -1.21). g* alone has no predictive power (IC 0.027, t = 0.59). Consensus growth alone predicts higher returns (IC 0.093, t = 1.65), driven by 2012 to 2018. Quintiles of the gap aren't monotonic: highest-gap minus lowest-gap is -4.1 points a year.
 
 ## Reading
 
 Two findings matter for the paper. The 2023 crossover is new: it dates the point at which prices began to assume more sustained growth than analysts were forecasting even for the next year. And the price-analyst gap keeps the same sign across both periods, unlike the KBRI basket score in H4. That makes it a candidate for a future registered test. These results are exploratory and the 2019 to 2025 estimate alone isn't significant.
+
+## Extended checks on the gap
+
+Code: `src/robustness/lseg_gap_extended.py`; output: `data/outputs/robustness_lseg_gap_extended.json`. Exploratory, run after the registered tests. Price returns from month-end closes; regressors are within-month standardised ranks; returns winsorised 1/99 within month.
+
+**Fama-MacBeth, 12-month returns (Newey-West, 11 lags; coefficient per one standard deviation of rank):**
+
+- Gap alone: -1.6 points a year (t = -1.40).
+- Gap with size, 12-1 momentum, beta and EV/Sales: -3.2 points (t = -2.64), 178 months, about 56 firms a month.
+- Gap with the same controls and analysts' long-term growth: -2.4 points (t = -2.71); long-term growth itself +0.9 (t = 0.51).
+- Split into its legs with controls: g* -3.8 points (t = -2.37), consensus growth +5.9 points (t = 2.72). With both the gap and consensus growth in the regression, neither is significant (t = -1.33 and 1.82): the two are collinear by construction.
+
+**Fama-MacBeth, 1-month returns (non-overlapping, 3 lags):** gap with controls -0.24 points a month (t = -2.21); gap alone -0.11 (t = -1.07).
+
+**Quintile portfolios, monthly rebalancing, equal weight:** lowest-gap minus highest-gap 0.36% a month (t = 1.08; 4.4% a year; Sharpe 0.28), not significant; 0.41% in 2010-2018 and 0.30% in 2019-2026. Returns by quintile aren't monotonic.
+
+**Time series, inside the H4 design:** adding the basket-median gap to the price-only model raises out-of-sample AUC from 0.502 to 0.513 (bootstrap p for no gain 0.50). Univariate AUC of the gap is 0.617 in 2012-2018 and 0.524 in 2019-2026: the same side of 0.5 in both, unlike KBRI (0.692 then 0.289), but weak in the test period. BSADF is 0.606 and 0.622.
+
+**95% block-bootstrap intervals for the registered H4 AUCs (6-month blocks, 5,000 draws):** price-only 0.502 [0.336, 0.642]; +KMSI 0.434 [0.261, 0.579]; +KMSI+KBRI 0.366 [0.223, 0.496]; price+BSADF 0.531 [0.348, 0.694].
+
+Reading: the gap's cross-sectional link to returns survives standard controls and analysts' long-term growth forecasts, but it's modest, and a simple portfolio sort doesn't deliver a significant spread in a cross-section of about 58 firms. It doesn't help time drawdowns. Its value is that it keeps its sign, at both levels, through the regime change that broke KBRI.
 
 ## Debt maturities (KBRI financing component)
 
