@@ -3,9 +3,11 @@ message: "If you use these indices, data or code, please cite them as below."
 title: "Beyond the AI Bubble: market sentiment (KMSI), speculative risk (KBRI) and climate-finance exposure (KCEI) indices"
 type: software
 authors:
-  - name: "Howden Research"
+  - family-names: "Khan"
+    given-names: "Zain-ud-Deen"
+    affiliation: "Howden Research"
     website: "https://howdenresearch.uk"
-version: "0.1.0-pre"
+version: "1.0.0"
 repository-code: "https://github.com/ZainAstonISOC/beyond-the-ai-bubble"
 license: MIT
 keywords:
@@ -24,3 +26,14 @@ identifiers:
   - type: url
     value: "https://osf.io/fkude"
     description: "OSF pre-registration of specification v1.0 (Secondary Data Preregistration, registered 13 Nov 2026)"
+preferred-citation:
+  type: report
+  title: "Beyond the AI Bubble: Measuring Sentiment, Speculative Risk and Climate-Finance Exposure in the AI Cycle"
+  authors:
+    - family-names: "Khan"
+      given-names: "Zain-ud-Deen"
+      affiliation: "Howden Research"
+  institution:
+    name: "Howden Research"
+  year: 2026
+  notes: "Howden Research Working Paper. Pre-registration: https://osf.io/fkude"
