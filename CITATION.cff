@@ -8,6 +8,7 @@ authors:
     affiliation: "Howden Research"
     website: "https://howdenresearch.uk"
 version: "1.0.0"
+doi: "10.5281/zenodo.24384443"
 repository-code: "https://github.com/ZainAstonISOC/beyond-the-ai-bubble"
 license: MIT
 keywords:
@@ -23,6 +24,9 @@ abstract: >-
   speculative risk (KBRI) and climate-finance exposure of AI infrastructure (KCEI),
   built only from public data under a pre-registered specification.
 identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24384443"
+    description: "Zenodo archive of the code and derived data"
   - type: url
     value: "https://osf.io/fkude"
     description: "OSF pre-registration of specification v1.0 (Secondary Data Preregistration, registered 13 Nov 2026)"

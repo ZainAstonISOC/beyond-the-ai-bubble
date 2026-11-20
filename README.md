@@ -4,6 +4,8 @@ Code, data and reports for the Howden Research working paper *Beyond the AI Bubb
 
 The project builds three indices from public data and tests them against hypotheses registered on the Open Science Framework before any test was run ([osf.io/fkude](https://osf.io/fkude)).
 
+Archived release (v1.0.0, the version behind the working paper): [doi.org/10.5281/zenodo.24384443](https://doi.org/10.5281/zenodo.24384443)
+
 - **KMSI**, the Khan Market Sentiment Index: daily fear and greed from eight market signals, published from October 2001.
 - **KBRI**, the Khan Bubble Risk Index: monthly bubble-risk scores for 163 US-listed firms in the AI value chain from 2010, built from point-in-time SEC filings and the revenue growth each share price implies (reverse DCF).
 - **KCEI**, the Khan Climate and Energy Impact framework: US data-centre load scenarios, stress tests for specialist data-centre owners, and the gap between location-based and market-based Scope 2 emissions.
